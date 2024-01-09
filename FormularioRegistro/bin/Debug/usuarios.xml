@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUsuario>
+  <Usuario>
+    <PId>root</PId>
+    <PClave>1234</PClave>
+  </Usuario>
+  <Usuario>
+    <PId>juan</PId>
+    <PClave>4321</PClave>
+  </Usuario>
+  <Usuario>
+    <PId>jaime</PId>
+    <PClave>4444</PClave>
+  </Usuario>
+  <Usuario>
+    <PId>jose</PId>
+    <PClave>1111</PClave>
+  </Usuario>
+  <Usuario>
+    <PId>javier</PId>
+    <PClave>2222</PClave>
+  </Usuario>
+  <Usuario>
+    <PId>jorge</PId>
+    <PClave>3333</PClave>
+  </Usuario>
+</ArrayOfUsuario>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProyecto>
+  <Proyecto>
+    <Codigo>1</Codigo>
+    <Descripcion>Web 1.0 para Técnicas Reunidas</Descripcion>
+    <FechaInicio>2023-10-11T00:00:00</FechaInicio>
+    <FechaFin>2024-10-01T00:00:00</FechaFin>
+    <PresupuestoInicial>2000</PresupuestoInicial>
+    <PresupuestoActual>1500</PresupuestoActual>
+    <Cambios>false</Cambios>
+    <CodigoCliente>428</CodigoCliente>
+  </Proyecto>
+  <Proyecto>
+    <Codigo>2</Codigo>
+    <Descripcion>Aplicación móvil de facturación para AXA</Descripcion>
+    <FechaInicio>2023-10-10T00:00:00</FechaInicio>
+    <FechaFin>2024-02-15T00:00:00</FechaFin>
+    <PresupuestoInicial>6000</PresupuestoInicial>
+    <PresupuestoActual>1500</PresupuestoActual>
+    <Cambios>false</Cambios>
+    <CodigoCliente>15</CodigoCliente>
+  </Proyecto>
+  <Proyecto>
+    <Codigo>3</Codigo>
+    <Descripcion>Refactorización de código aplicación interna ASZ 3.2</Descripcion>
+    <FechaInicio>2023-10-08T00:00:00</FechaInicio>
+    <FechaFin>2025-09-30T00:00:00</FechaFin>
+    <PresupuestoInicial>200</PresupuestoInicial>
+    <PresupuestoActual>150</PresupuestoActual>
+    <Cambios>false</Cambios>
+    <CodigoCliente>122</CodigoCliente>
+  </Proyecto>
+  <Proyecto>
+    <Codigo>4</Codigo>
+    <Descripcion>Pruebas End-2-End para INDRA</Descripcion>
+    <FechaInicio>2023-10-05T00:00:00</FechaInicio>
+    <FechaFin>2025-05-05T00:00:00</FechaFin>
+    <PresupuestoInicial>150</PresupuestoInicial>
+    <PresupuestoActual>300</PresupuestoActual>
+    <Cambios>false</Cambios>
+    <CodigoCliente>546</CodigoCliente>
+  </Proyecto>
+  <Proyecto>
+    <Codigo>5</Codigo>
+    <Descripcion>Web 2.0 para Lufthansa</Descripcion>
+    <FechaInicio>2023-10-18T00:00:00</FechaInicio>
+    <FechaFin>2023-12-31T00:00:00</FechaFin>
+    <PresupuestoInicial>10000</PresupuestoInicial>
+    <PresupuestoActual>10000</PresupuestoActual>
+    <Cambios>false</Cambios>
+    <CodigoCliente>666</CodigoCliente>
+  </Proyecto>
+</ArrayOfProyecto>

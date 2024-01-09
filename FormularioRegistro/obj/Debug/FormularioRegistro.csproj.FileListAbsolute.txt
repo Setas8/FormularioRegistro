@@ -1,0 +1,229 @@
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro (25 octubre)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (FALTA ALTAEMPLEADOS)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\2ºDAM\Interfaces\ACTIVIDADES\FormularioRegistro (FALTA revisar validación empleados)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.tituloReg.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Ernie\Desktop\FormularioRegistro (31 oct falta xml)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.FormRegistro.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Buffers.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Memory.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Text.Json.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.ValueTuple.dll
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Buffers.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Memory.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Text.Json.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\bin\Debug\System.ValueTuple.xml
+C:\Users\Setas\source\repos\FormularioRegistro (3 NOV revisar xml+Usu)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CopyComplete
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Buffers.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Memory.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Text.Json.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.ValueTuple.dll
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Buffers.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Memory.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Text.Json.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\bin\Debug\System.ValueTuple.xml
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.FormRegistro.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioAltaProyecto.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioPrincipal.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.FormularioProyectos.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CopyComplete
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\source\repos\FormularioRegistro (10 Nov Falta Binario)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaCliente.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaUsuarios.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Registro.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaProyecto.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Principal.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.FormListadoProyectos.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.pdb
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Buffers.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Memory.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Text.Json.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.ValueTuple.dll
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Buffers.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Memory.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Numerics.Vectors.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Text.Json.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.ValueTuple.xml
+F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CopyComplete
