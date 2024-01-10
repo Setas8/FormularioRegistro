@@ -227,3 +227,40 @@ F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Te
 F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\bin\Debug\System.ValueTuple.xml
 F:\Interfaces\FormularioRegistro (15 dic)\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CopyComplete
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe.config
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.exe
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\FormularioRegistro.pdb
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Buffers.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Memory.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Text.Json.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.ValueTuple.dll
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Buffers.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Memory.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Text.Json.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\System.ValueTuple.xml
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.AssemblyReference.cache
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaCliente.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaEmpleados.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaUsuarios.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormListaEmpleados.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Registro.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormAltaProyecto.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Principal.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormListadoProyectos.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.formularioListado.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Properties.Resources.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.GenerateResource.cache
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CoreCompileInputs.cache
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.csproj.CopyComplete
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.exe
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.pdb

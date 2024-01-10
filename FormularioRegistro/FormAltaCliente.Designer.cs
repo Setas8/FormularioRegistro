@@ -32,7 +32,7 @@
             this.tPageDatGene = new System.Windows.Forms.TabPage();
             this.cbPais = new System.Windows.Forms.ComboBox();
             this.tbTlf = new System.Windows.Forms.TextBox();
-            this.tbCIF = new System.Windows.Forms.TextBox();
+            this.tbNIF = new System.Windows.Forms.TextBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.tbNomRepresen = new System.Windows.Forms.TextBox();
             this.tbCiudad = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.tPageDatPriv = new System.Windows.Forms.TabPage();
             this.nUdDescuen = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBComent = new System.Windows.Forms.TextBox();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
             this.grbTipoCli = new System.Windows.Forms.GroupBox();
@@ -58,6 +58,9 @@
             this.rbGra = new System.Windows.Forms.RadioButton();
             this.tPageSector = new System.Windows.Forms.TabPage();
             this.tPageLogo = new System.Windows.Forms.TabPage();
+            this.picBox = new System.Windows.Forms.PictureBox();
+            this.prgBar = new System.Windows.Forms.ProgressBar();
+            this.btnFileDialog = new System.Windows.Forms.Button();
             this.tbLogo = new System.Windows.Forms.TextBox();
             this.lblLogo = new System.Windows.Forms.Label();
             this.tPageCitas = new System.Windows.Forms.TabPage();
@@ -66,9 +69,6 @@
             this.btAceptar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnFileDialog = new System.Windows.Forms.Button();
-            this.prgBar = new System.Windows.Forms.ProgressBar();
-            this.picBox = new System.Windows.Forms.PictureBox();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
@@ -76,8 +76,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nUdDescuen)).BeginInit();
             this.grbTipoCli.SuspendLayout();
             this.tPageLogo.SuspendLayout();
-            this.tPageCitas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
+            this.tPageCitas.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbControlCliente
@@ -98,7 +98,7 @@
             // 
             this.tPageDatGene.Controls.Add(this.cbPais);
             this.tPageDatGene.Controls.Add(this.tbTlf);
-            this.tPageDatGene.Controls.Add(this.tbCIF);
+            this.tPageDatGene.Controls.Add(this.tbNIF);
             this.tPageDatGene.Controls.Add(this.tbCorreo);
             this.tPageDatGene.Controls.Add(this.tbNomRepresen);
             this.tPageDatGene.Controls.Add(this.tbCiudad);
@@ -123,47 +123,55 @@
             // cbPais
             // 
             this.cbPais.FormattingEnabled = true;
+            this.cbPais.Items.AddRange(new object[] {
+            "Bélgica",
+            "Escocia",
+            "España",
+            "Inglaterra",
+            "Mexico",
+            "Países Bajos"});
             this.cbPais.Location = new System.Drawing.Point(566, 155);
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(121, 21);
-            this.cbPais.TabIndex = 31;
+            this.cbPais.Sorted = true;
+            this.cbPais.TabIndex = 8;
             // 
             // tbTlf
             // 
             this.tbTlf.Location = new System.Drawing.Point(566, 99);
             this.tbTlf.Name = "tbTlf";
             this.tbTlf.Size = new System.Drawing.Size(121, 20);
-            this.tbTlf.TabIndex = 30;
+            this.tbTlf.TabIndex = 7;
             this.tbTlf.Text = "(___)___-______";
             // 
-            // tbCIF
+            // tbNIF
             // 
-            this.tbCIF.Location = new System.Drawing.Point(566, 53);
-            this.tbCIF.Name = "tbCIF";
-            this.tbCIF.Size = new System.Drawing.Size(121, 20);
-            this.tbCIF.TabIndex = 29;
-            this.tbCIF.Text = "_-________";
+            this.tbNIF.Location = new System.Drawing.Point(566, 53);
+            this.tbNIF.Name = "tbNIF";
+            this.tbNIF.Size = new System.Drawing.Size(121, 20);
+            this.tbNIF.TabIndex = 6;
+            this.tbNIF.Text = "_-________";
             // 
             // tbCorreo
             // 
             this.tbCorreo.Location = new System.Drawing.Point(194, 229);
             this.tbCorreo.Name = "tbCorreo";
             this.tbCorreo.Size = new System.Drawing.Size(195, 20);
-            this.tbCorreo.TabIndex = 28;
+            this.tbCorreo.TabIndex = 5;
             // 
             // tbNomRepresen
             // 
             this.tbNomRepresen.Location = new System.Drawing.Point(194, 176);
             this.tbNomRepresen.Name = "tbNomRepresen";
             this.tbNomRepresen.Size = new System.Drawing.Size(195, 20);
-            this.tbNomRepresen.TabIndex = 27;
+            this.tbNomRepresen.TabIndex = 4;
             // 
             // tbCiudad
             // 
             this.tbCiudad.Location = new System.Drawing.Point(194, 136);
             this.tbCiudad.Name = "tbCiudad";
             this.tbCiudad.Size = new System.Drawing.Size(195, 20);
-            this.tbCiudad.TabIndex = 26;
+            this.tbCiudad.TabIndex = 3;
             // 
             // tbDirecc
             // 
@@ -171,14 +179,14 @@
             this.tbDirecc.Multiline = true;
             this.tbDirecc.Name = "tbDirecc";
             this.tbDirecc.Size = new System.Drawing.Size(195, 37);
-            this.tbDirecc.TabIndex = 25;
+            this.tbDirecc.TabIndex = 2;
             // 
             // tbNombre
             // 
             this.tbNombre.Location = new System.Drawing.Point(194, 32);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(195, 20);
-            this.tbNombre.TabIndex = 24;
+            this.tbNombre.TabIndex = 1;
             // 
             // lblPais
             // 
@@ -255,7 +263,7 @@
             // tPageDatPriv
             // 
             this.tPageDatPriv.Controls.Add(this.nUdDescuen);
-            this.tPageDatPriv.Controls.Add(this.textBox1);
+            this.tPageDatPriv.Controls.Add(this.tBComent);
             this.tPageDatPriv.Controls.Add(this.lblComen);
             this.tPageDatPriv.Controls.Add(this.lblDescu);
             this.tPageDatPriv.Controls.Add(this.grbTipoCli);
@@ -272,15 +280,15 @@
             this.nUdDescuen.Location = new System.Drawing.Point(135, 164);
             this.nUdDescuen.Name = "nUdDescuen";
             this.nUdDescuen.Size = new System.Drawing.Size(120, 20);
-            this.nUdDescuen.TabIndex = 8;
+            this.nUdDescuen.TabIndex = 5;
             // 
-            // textBox1
+            // tBComent
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 207);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(511, 78);
-            this.textBox1.TabIndex = 7;
+            this.tBComent.Location = new System.Drawing.Point(135, 207);
+            this.tBComent.Multiline = true;
+            this.tBComent.Name = "tBComent";
+            this.tBComent.Size = new System.Drawing.Size(511, 78);
+            this.tBComent.TabIndex = 6;
             // 
             // lblComen
             // 
@@ -319,7 +327,7 @@
             this.rbMult.Location = new System.Drawing.Point(148, 81);
             this.rbMult.Name = "rbMult";
             this.rbMult.Size = new System.Drawing.Size(87, 17);
-            this.rbMult.TabIndex = 3;
+            this.rbMult.TabIndex = 4;
             this.rbMult.TabStop = true;
             this.rbMult.Text = "Multinacional";
             this.rbMult.UseVisualStyleBackColor = true;
@@ -330,7 +338,7 @@
             this.rbPeq.Location = new System.Drawing.Point(16, 38);
             this.rbPeq.Name = "rbPeq";
             this.rbPeq.Size = new System.Drawing.Size(68, 17);
-            this.rbPeq.TabIndex = 0;
+            this.rbPeq.TabIndex = 1;
             this.rbPeq.TabStop = true;
             this.rbPeq.Text = "Pequeña";
             this.rbPeq.UseVisualStyleBackColor = true;
@@ -341,7 +349,7 @@
             this.rbMed.Location = new System.Drawing.Point(16, 81);
             this.rbMed.Name = "rbMed";
             this.rbMed.Size = new System.Drawing.Size(66, 17);
-            this.rbMed.TabIndex = 2;
+            this.rbMed.TabIndex = 3;
             this.rbMed.TabStop = true;
             this.rbMed.Text = "Mediana";
             this.rbMed.UseVisualStyleBackColor = true;
@@ -352,7 +360,7 @@
             this.rbGra.Location = new System.Drawing.Point(148, 38);
             this.rbGra.Name = "rbGra";
             this.rbGra.Size = new System.Drawing.Size(60, 17);
-            this.rbGra.TabIndex = 1;
+            this.rbGra.TabIndex = 2;
             this.rbGra.TabStop = true;
             this.rbGra.Text = "Grande";
             this.rbGra.UseVisualStyleBackColor = true;
@@ -381,6 +389,32 @@
             this.tPageLogo.TabIndex = 3;
             this.tPageLogo.Text = "Logo";
             this.tPageLogo.UseVisualStyleBackColor = true;
+            // 
+            // picBox
+            // 
+            this.picBox.Location = new System.Drawing.Point(172, 97);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(220, 137);
+            this.picBox.TabIndex = 5;
+            this.picBox.TabStop = false;
+            // 
+            // prgBar
+            // 
+            this.prgBar.Location = new System.Drawing.Point(172, 252);
+            this.prgBar.Name = "prgBar";
+            this.prgBar.Size = new System.Drawing.Size(489, 23);
+            this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.prgBar.TabIndex = 4;
+            // 
+            // btnFileDialog
+            // 
+            this.btnFileDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFileDialog.Location = new System.Drawing.Point(418, 51);
+            this.btnFileDialog.Name = "btnFileDialog";
+            this.btnFileDialog.Size = new System.Drawing.Size(48, 20);
+            this.btnFileDialog.TabIndex = 2;
+            this.btnFileDialog.Text = "...";
+            this.btnFileDialog.UseVisualStyleBackColor = true;
             // 
             // tbLogo
             // 
@@ -425,7 +459,7 @@
             this.monCalenCitas.Location = new System.Drawing.Point(245, 104);
             this.monCalenCitas.Name = "monCalenCitas";
             this.monCalenCitas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.monCalenCitas.TabIndex = 0;
+            this.monCalenCitas.TabIndex = 2;
             // 
             // btAceptar
             // 
@@ -457,32 +491,6 @@
             this.lblTitulo.TabIndex = 3;
             this.lblTitulo.Text = "ALTA DE CLIENTE";
             // 
-            // btnFileDialog
-            // 
-            this.btnFileDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFileDialog.Location = new System.Drawing.Point(418, 51);
-            this.btnFileDialog.Name = "btnFileDialog";
-            this.btnFileDialog.Size = new System.Drawing.Size(48, 20);
-            this.btnFileDialog.TabIndex = 2;
-            this.btnFileDialog.Text = "...";
-            this.btnFileDialog.UseVisualStyleBackColor = true;
-            // 
-            // prgBar
-            // 
-            this.prgBar.Location = new System.Drawing.Point(172, 252);
-            this.prgBar.Name = "prgBar";
-            this.prgBar.Size = new System.Drawing.Size(489, 23);
-            this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.prgBar.TabIndex = 4;
-            // 
-            // picBox
-            // 
-            this.picBox.Location = new System.Drawing.Point(172, 97);
-            this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(220, 137);
-            this.picBox.TabIndex = 5;
-            this.picBox.TabStop = false;
-            // 
             // OpFDia
             // 
             this.OpFDia.FileName = "dialogoLogo";
@@ -509,8 +517,8 @@
             this.grbTipoCli.PerformLayout();
             this.tPageLogo.ResumeLayout(false);
             this.tPageLogo.PerformLayout();
-            this.tPageCitas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
+            this.tPageCitas.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,7 +537,7 @@
         private System.Windows.Forms.TabPage tPageCitas;
         private System.Windows.Forms.ComboBox cbPais;
         private System.Windows.Forms.TextBox tbTlf;
-        private System.Windows.Forms.TextBox tbCIF;
+        private System.Windows.Forms.TextBox tbNIF;
         private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.TextBox tbNomRepresen;
         private System.Windows.Forms.TextBox tbCiudad;
@@ -548,7 +556,7 @@
         private System.Windows.Forms.RadioButton rbPeq;
         private System.Windows.Forms.RadioButton rbMed;
         private System.Windows.Forms.RadioButton rbGra;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBComent;
         private System.Windows.Forms.Label lblComen;
         private System.Windows.Forms.Label lblDescu;
         private System.Windows.Forms.NumericUpDown nUdDescuen;
