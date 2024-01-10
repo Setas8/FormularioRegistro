@@ -80,9 +80,15 @@ namespace FormularioRegistro
             //comentarios
 
             //logo
-
+            else if (string.IsNullOrWhiteSpace(tbLogo.Text))
+            {
+                tbLogo.BackColor = Color.Red;
+            }
             //tlf
-
+            else if (string.IsNullOrWhiteSpace(tbTlf.Text))
+            {
+                tbTlf.BackColor = Color.Red;
+            }
             //citas
 
             //calendariocitas
