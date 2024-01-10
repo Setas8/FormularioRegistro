@@ -51,7 +51,7 @@
             this.tBComent = new System.Windows.Forms.TextBox();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
-            this.grbTipoCli = new System.Windows.Forms.GroupBox();
+            this.gbTipoCli = new System.Windows.Forms.GroupBox();
             this.rbMult = new System.Windows.Forms.RadioButton();
             this.rbPeq = new System.Windows.Forms.RadioButton();
             this.rbMed = new System.Windows.Forms.RadioButton();
@@ -74,7 +74,7 @@
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUdDescuen)).BeginInit();
-            this.grbTipoCli.SuspendLayout();
+            this.gbTipoCli.SuspendLayout();
             this.tPageLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tPageCitas.SuspendLayout();
@@ -122,6 +122,7 @@
             // 
             // cbPais
             // 
+            this.cbPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPais.FormattingEnabled = true;
             this.cbPais.Items.AddRange(new object[] {
             "Bélgica",
@@ -142,7 +143,6 @@
             this.tbTlf.Name = "tbTlf";
             this.tbTlf.Size = new System.Drawing.Size(121, 20);
             this.tbTlf.TabIndex = 7;
-            this.tbTlf.Text = "(___)___-______";
             // 
             // tbNIF
             // 
@@ -150,7 +150,6 @@
             this.tbNIF.Name = "tbNIF";
             this.tbNIF.Size = new System.Drawing.Size(121, 20);
             this.tbNIF.TabIndex = 6;
-            this.tbNIF.Text = "_-________";
             // 
             // tbCorreo
             // 
@@ -266,7 +265,7 @@
             this.tPageDatPriv.Controls.Add(this.tBComent);
             this.tPageDatPriv.Controls.Add(this.lblComen);
             this.tPageDatPriv.Controls.Add(this.lblDescu);
-            this.tPageDatPriv.Controls.Add(this.grbTipoCli);
+            this.tPageDatPriv.Controls.Add(this.gbTipoCli);
             this.tPageDatPriv.Location = new System.Drawing.Point(4, 22);
             this.tPageDatPriv.Name = "tPageDatPriv";
             this.tPageDatPriv.Padding = new System.Windows.Forms.Padding(3);
@@ -278,6 +277,11 @@
             // nUdDescuen
             // 
             this.nUdDescuen.Location = new System.Drawing.Point(135, 164);
+            this.nUdDescuen.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.nUdDescuen.Name = "nUdDescuen";
             this.nUdDescuen.Size = new System.Drawing.Size(120, 20);
             this.nUdDescuen.TabIndex = 5;
@@ -308,18 +312,18 @@
             this.lblDescu.TabIndex = 5;
             this.lblDescu.Text = "Descuento";
             // 
-            // grbTipoCli
+            // gbTipoCli
             // 
-            this.grbTipoCli.Controls.Add(this.rbMult);
-            this.grbTipoCli.Controls.Add(this.rbPeq);
-            this.grbTipoCli.Controls.Add(this.rbMed);
-            this.grbTipoCli.Controls.Add(this.rbGra);
-            this.grbTipoCli.Location = new System.Drawing.Point(46, 30);
-            this.grbTipoCli.Name = "grbTipoCli";
-            this.grbTipoCli.Size = new System.Drawing.Size(329, 124);
-            this.grbTipoCli.TabIndex = 4;
-            this.grbTipoCli.TabStop = false;
-            this.grbTipoCli.Text = "Tipo de cliente";
+            this.gbTipoCli.Controls.Add(this.rbMult);
+            this.gbTipoCli.Controls.Add(this.rbPeq);
+            this.gbTipoCli.Controls.Add(this.rbMed);
+            this.gbTipoCli.Controls.Add(this.rbGra);
+            this.gbTipoCli.Location = new System.Drawing.Point(46, 30);
+            this.gbTipoCli.Name = "gbTipoCli";
+            this.gbTipoCli.Size = new System.Drawing.Size(329, 124);
+            this.gbTipoCli.TabIndex = 4;
+            this.gbTipoCli.TabStop = false;
+            this.gbTipoCli.Text = "Tipo de cliente";
             // 
             // rbMult
             // 
@@ -415,6 +419,7 @@
             this.btnFileDialog.TabIndex = 2;
             this.btnFileDialog.Text = "...";
             this.btnFileDialog.UseVisualStyleBackColor = true;
+            this.btnFileDialog.Click += new System.EventHandler(this.btnFileDialog_Click);
             // 
             // tbLogo
             // 
@@ -507,14 +512,15 @@
             this.Name = "FormAltaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo cliente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAltaCliente_FormClosing);
             this.tbControlCliente.ResumeLayout(false);
             this.tPageDatGene.ResumeLayout(false);
             this.tPageDatGene.PerformLayout();
             this.tPageDatPriv.ResumeLayout(false);
             this.tPageDatPriv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUdDescuen)).EndInit();
-            this.grbTipoCli.ResumeLayout(false);
-            this.grbTipoCli.PerformLayout();
+            this.gbTipoCli.ResumeLayout(false);
+            this.gbTipoCli.PerformLayout();
             this.tPageLogo.ResumeLayout(false);
             this.tPageLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
@@ -551,7 +557,7 @@
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.Label lblNRepre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.GroupBox grbTipoCli;
+        private System.Windows.Forms.GroupBox gbTipoCli;
         private System.Windows.Forms.RadioButton rbMult;
         private System.Windows.Forms.RadioButton rbPeq;
         private System.Windows.Forms.RadioButton rbMed;
