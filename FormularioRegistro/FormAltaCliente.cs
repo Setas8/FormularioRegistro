@@ -27,12 +27,12 @@ namespace FormularioRegistro
             cbPais.ResetText();
             tbNomRepresen.Clear();
             tbCorreo.Clear();
-            tbNIF.ResetText();
+            masTBNIF.ResetText();
             // tipoCliente;
             nUdDescuen.ResetText();
             tBComent.Clear();
             tbLogo.Clear();
-            tbTlf.Clear();
+            masTBTlf.Clear();
             dTPCitas.ResetText();
             monCalenCitas.ResetText();
             /// todo a blanco
@@ -41,8 +41,7 @@ namespace FormularioRegistro
         private void btAceptar_Click(object sender, EventArgs e)
         {
             bool crear = false;
-            int i;         
-
+                 
             //nombre
             if(string.IsNullOrWhiteSpace(tbNombre.Text))
             {
@@ -60,7 +59,13 @@ namespace FormularioRegistro
             {
                 tbCiudad.BackColor = Color.Red;
                 crear = false;
-            }          
+            }
+            //Pais
+            else if (string.IsNullOrWhiteSpace(cbPais.Text))
+            {
+                cbPais.BackColor = Color.Red;
+                crear = false;
+            }
             //Nombre representante
             else if (string.IsNullOrWhiteSpace(tbNomRepresen.Text))
             {
@@ -75,36 +80,23 @@ namespace FormularioRegistro
                 crear = false;
             }
             //nif
-            else if (string.IsNullOrWhiteSpace(tbNIF.Text))
+            else if (string.IsNullOrWhiteSpace(masTBNIF.Text))
             {
-                tbNIF.BackColor = Color.Red;
+                masTBNIF.BackColor = Color.Red;
                 crear = false;
             }
-            else if (tbNIF.Text.Length != 9)
+            else if (masTBNIF.Text.Length != 10)
             {
-                tbNIF.BackColor = Color.Red;
+                masTBNIF.BackColor = Color.Red;
                 MessageBox.Show("El NIF debe tener 9 caracteres");
                 crear = false;
             }
             //tlf
-            else if (!int.TryParse(tbTlf.Text, out i))
+            else if (string.IsNullOrWhiteSpace(masTBTlf.Text))
             {
-               
-                tbTlf.BackColor = Color.Red;
-                MessageBox.Show("El teléfono sólo debe tener caracteres numéricos");
+                masTBTlf.BackColor = Color.Red;
                 crear = false;
-            }
-            else if (string.IsNullOrWhiteSpace(tbTlf.Text))
-            {
-                tbTlf.BackColor = Color.Red;
-                crear = false;
-            }
-            else if (tbTlf.Text.Length != 9)
-            {
-                tbTlf.BackColor = Color.Red;
-                MessageBox.Show("El teléfono debe tener 9 caracteres");
-                crear = false;
-            }
+            }     
             //TipoCliente
             else if (!comprobarRadioButton())
             {
@@ -130,9 +122,9 @@ namespace FormularioRegistro
                 tbCiudad.BackColor = Color.White;
                 tbNomRepresen.BackColor = Color.White;
                 tbCorreo.BackColor = Color.White;
-                tbNIF.BackColor = Color.White;
+                masTBNIF.BackColor = Color.White;
                 tbLogo.BackColor = Color.White;
-                tbTlf.BackColor = Color.White;
+                masTBTlf.BackColor = Color.White;
 
                 ///todos campos a blanco
 
@@ -151,11 +143,14 @@ namespace FormularioRegistro
 
 
                 Cliente cli = new Cliente(tbNombre.Text, tbDirecc.Text, tbCiudad.Text, cbPais.Text, tbNomRepresen.Text,
-                                          tbCorreo.Text, tbNIF.Text, tipoCli, int.Parse(nUdDescuen.Value.ToString()),
-                                          tBComent.Text, tbLogo.Text, int.Parse(tbTlf.Text), DateTime.Today,
+                                          tbCorreo.Text, masTBNIF.Text, tipoCli, int.Parse(nUdDescuen.Value.ToString()),
+                                          tBComent.Text, tbLogo.Text, masTBTlf.Text, DateTime.Today,
                                           monCalenCitas.TodayDate, Convert.ToDateTime(dTPCitas.Value));
 
-
+                MessageBox.Show(cli.Nombre + " " + cli.Direccion + " " + cli.Ciudad + " " + cli.Pais
+                       + " " + cli.NombreRepresentante + " " + cli.Correo + " " + cli.Nif + " " + cli.TipoCliente
+                       + " " + cli.Descuento + " " + cli.Comentarios + " " + cli.Logo + " " + cli.Telefono
+                       + " " + cli.FechaAlta.Date + " " + cli.ProximaCita + " " + cli.UltimaCita);
                 ControladorClientes.listaClientes.Add(cli);
                 tbNombre.BackColor = Color.White;
                 ///todos campos a blanco
@@ -215,14 +210,21 @@ namespace FormularioRegistro
 
         private void btnFileDialog_Click(object sender, EventArgs e)
         {
-           
 
+
+           
             OpFDia.ShowDialog();
-            OpFDia.Filter = "Archivos JPEG|*.jpg;*.jpeg|Todos los archivos|*.*";
+            OpFDia.Filter = "Archivos JPEG|*.jpg";
             OpFDia.Title = "Seleccionar archivo JPEG";
             OpFDia.AddExtension = true;
-            OpFDia.FileName = ".jpg";
-            tbLogo.Text = OpFDia.FileName;
+            tbLogo.Text = OpFDia.SafeFileName;
+            picBox.ImageLocation = OpFDia.FileName;
+
+            prgBar.BackColor = Color.Green;
+
+            timer.Start();
+            
+
             
 
         }

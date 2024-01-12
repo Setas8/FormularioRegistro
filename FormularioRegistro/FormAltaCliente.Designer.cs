@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbControlCliente = new System.Windows.Forms.TabControl();
             this.tPageDatGene = new System.Windows.Forms.TabPage();
             this.cbPais = new System.Windows.Forms.ComboBox();
-            this.tbTlf = new System.Windows.Forms.TextBox();
-            this.tbNIF = new System.Windows.Forms.TextBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.tbNomRepresen = new System.Windows.Forms.TextBox();
             this.tbCiudad = new System.Windows.Forms.TextBox();
@@ -70,6 +69,9 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
+            this.masTBNIF = new System.Windows.Forms.MaskedTextBox();
+            this.masTBTlf = new System.Windows.Forms.MaskedTextBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
@@ -96,9 +98,9 @@
             // 
             // tPageDatGene
             // 
+            this.tPageDatGene.Controls.Add(this.masTBTlf);
+            this.tPageDatGene.Controls.Add(this.masTBNIF);
             this.tPageDatGene.Controls.Add(this.cbPais);
-            this.tPageDatGene.Controls.Add(this.tbTlf);
-            this.tPageDatGene.Controls.Add(this.tbNIF);
             this.tPageDatGene.Controls.Add(this.tbCorreo);
             this.tPageDatGene.Controls.Add(this.tbNomRepresen);
             this.tPageDatGene.Controls.Add(this.tbCiudad);
@@ -136,20 +138,6 @@
             this.cbPais.Size = new System.Drawing.Size(121, 21);
             this.cbPais.Sorted = true;
             this.cbPais.TabIndex = 8;
-            // 
-            // tbTlf
-            // 
-            this.tbTlf.Location = new System.Drawing.Point(566, 99);
-            this.tbTlf.Name = "tbTlf";
-            this.tbTlf.Size = new System.Drawing.Size(121, 20);
-            this.tbTlf.TabIndex = 7;
-            // 
-            // tbNIF
-            // 
-            this.tbNIF.Location = new System.Drawing.Point(566, 53);
-            this.tbNIF.Name = "tbNIF";
-            this.tbNIF.Size = new System.Drawing.Size(121, 20);
-            this.tbNIF.TabIndex = 6;
             // 
             // tbCorreo
             // 
@@ -498,7 +486,24 @@
             // 
             // OpFDia
             // 
+            this.OpFDia.DefaultExt = "jpg";
             this.OpFDia.FileName = "dialogoLogo";
+            // 
+            // masTBNIF
+            // 
+            this.masTBNIF.Location = new System.Drawing.Point(566, 53);
+            this.masTBNIF.Mask = "L-00000000";
+            this.masTBNIF.Name = "masTBNIF";
+            this.masTBNIF.Size = new System.Drawing.Size(121, 20);
+            this.masTBNIF.TabIndex = 24;
+            // 
+            // masTBTlf
+            // 
+            this.masTBTlf.Location = new System.Drawing.Point(566, 99);
+            this.masTBTlf.Mask = "(999)000-0000";
+            this.masTBTlf.Name = "masTBTlf";
+            this.masTBTlf.Size = new System.Drawing.Size(121, 20);
+            this.masTBTlf.TabIndex = 25;
             // 
             // FormAltaCliente
             // 
@@ -542,8 +547,6 @@
         private System.Windows.Forms.TabPage tPageLogo;
         private System.Windows.Forms.TabPage tPageCitas;
         private System.Windows.Forms.ComboBox cbPais;
-        private System.Windows.Forms.TextBox tbTlf;
-        private System.Windows.Forms.TextBox tbNIF;
         private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.TextBox tbNomRepresen;
         private System.Windows.Forms.TextBox tbCiudad;
@@ -574,5 +577,8 @@
         private System.Windows.Forms.ProgressBar prgBar;
         private System.Windows.Forms.PictureBox picBox;
         private System.Windows.Forms.OpenFileDialog OpFDia;
+        private System.Windows.Forms.MaskedTextBox masTBTlf;
+        private System.Windows.Forms.MaskedTextBox masTBNIF;
+        private System.Windows.Forms.Timer timer;
     }
 }
