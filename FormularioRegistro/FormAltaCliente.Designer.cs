@@ -410,6 +410,7 @@
             // 
             this.prgBar.BackColor = System.Drawing.SystemColors.Control;
             this.prgBar.Location = new System.Drawing.Point(172, 252);
+            this.prgBar.MarqueeAnimationSpeed = 1000;
             this.prgBar.Name = "prgBar";
             this.prgBar.Size = new System.Drawing.Size(489, 23);
             this.prgBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;

@@ -242,10 +242,10 @@ namespace FormularioRegistro
         }         
         private void Timer_Tick(object sender, EventArgs e)
         {                     
-            progresoActual += 100; 
-
+            progresoActual += 10;
+            prgBar.PerformStep();
             prgBar.Value = progresoActual;
-
+           
             // Si llega al máximo se para el timer
             if (progresoActual >= prgBar.Maximum)
             {              

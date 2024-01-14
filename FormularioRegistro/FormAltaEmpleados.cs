@@ -140,7 +140,7 @@ namespace FormularioRegistro
             DialogResult diaRes = MessageBox.Show("¿Quieres guardar los nuevos empleados?", "Consulta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (diaRes == DialogResult.No)
             {
-                e.Cancel = true;
+                e.Cancel = false;
             }
             else
             {
