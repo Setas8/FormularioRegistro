@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FormularioRegistro
 {
@@ -91,7 +92,7 @@ namespace FormularioRegistro
                 MessageBox.Show("El NIF debe tener 9 caracteres");
                 crear = false;
             }
-            //tlf
+            //tlf         
             else if (string.IsNullOrWhiteSpace(masTBTlf.Text))
             {
                 masTBTlf.BackColor = Color.Red;
@@ -208,26 +209,72 @@ namespace FormularioRegistro
             }
         }
 
+        int progresoActual = 0;
         private void btnFileDialog_Click(object sender, EventArgs e)
         {
-
-
-           
+         
             OpFDia.ShowDialog();
             OpFDia.Filter = "Archivos JPEG|*.jpg";
             OpFDia.Title = "Seleccionar archivo JPEG";
-            OpFDia.AddExtension = true;
+            OpFDia.Tag = OpFDia.FileName;
             tbLogo.Text = OpFDia.SafeFileName;
             picBox.ImageLocation = OpFDia.FileName;
 
-            prgBar.BackColor = Color.Green;
 
-            timer.Start();
-            
 
-            
+
 
         }
+        private void OpenFileDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // Este evento se desencadena antes de que el cuadro de diálogo se cierre
+            // Puedes realizar validaciones adicionales aquí
+            prgBar.Value = progresoActual;
+            timer.Start();
+            timer.Tick += Timer_Tick;
+                     
+            if (!archivoCorrecto(OpFDia.FileName))
+            {
+                MessageBox.Show("El archivo no cumple con los criterios requeridos");
+                e.Cancel = true; // Cancela la operación de apertura del archivo
+            }
+
+        }         
+        private void Timer_Tick(object sender, EventArgs e)
+        {                     
+            progresoActual += 100; 
+
+            prgBar.Value = progresoActual;
+
+            // Si llega al máximo se para el timer
+            if (progresoActual >= prgBar.Maximum)
+            {              
+                timer.Stop();               
+                progresoActual = 0;
+                timer.Tick -= Timer_Tick;
+            }          
+        }
+        private bool archivoCorrecto(string filePath)
+        {
+
+            return filePath.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase);
+        }
+        private void ShowAWeeksVacationOneMonthFromToday()
+        {
+            DateTime today = this.monCalenCitas.TodayDate;
+            DateTime vacationStart = today.AddMonths(1);
+            DateTime vacationEnd = vacationStart.AddDays(7);
+            // Select the week using SelectionStart and SelectionEnd.
+            this.monCalenCitas.SelectionStart = vacationStart.AddDays(-1);
+            this.monCalenCitas.SelectionEnd = vacationEnd.AddDays(-1);
+        }
+
+        private void FormAltaCliente_Load(object sender, EventArgs e)
+        {
+            ShowAWeeksVacationOneMonthFromToday();
+            monCalenCitas.AddBoldedDate(new DateTime(2024, 10, 1));
+        }
+
         /*      
 ErrorProvider errorProvider1 = new ErrorProvider();
 ErrorProvider errorProvider2 = new ErrorProvider();

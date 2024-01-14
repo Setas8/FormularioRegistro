@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tbControlCliente = new System.Windows.Forms.TabControl();
             this.tPageDatGene = new System.Windows.Forms.TabPage();
+            this.masTBTlf = new System.Windows.Forms.MaskedTextBox();
+            this.masTBNIF = new System.Windows.Forms.MaskedTextBox();
             this.cbPais = new System.Windows.Forms.ComboBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.tbNomRepresen = new System.Windows.Forms.TextBox();
@@ -69,8 +71,6 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
-            this.masTBNIF = new System.Windows.Forms.MaskedTextBox();
-            this.masTBTlf = new System.Windows.Forms.MaskedTextBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
@@ -121,6 +121,22 @@
             this.tPageDatGene.TabIndex = 0;
             this.tPageDatGene.Text = "Datos Generales";
             this.tPageDatGene.UseVisualStyleBackColor = true;
+            // 
+            // masTBTlf
+            // 
+            this.masTBTlf.Location = new System.Drawing.Point(566, 99);
+            this.masTBTlf.Mask = "(999)000-0000";
+            this.masTBTlf.Name = "masTBTlf";
+            this.masTBTlf.Size = new System.Drawing.Size(121, 20);
+            this.masTBTlf.TabIndex = 25;
+            // 
+            // masTBNIF
+            // 
+            this.masTBNIF.Location = new System.Drawing.Point(566, 53);
+            this.masTBNIF.Mask = "L-00000000";
+            this.masTBNIF.Name = "masTBNIF";
+            this.masTBNIF.Size = new System.Drawing.Size(121, 20);
+            this.masTBNIF.TabIndex = 24;
             // 
             // cbPais
             // 
@@ -392,6 +408,7 @@
             // 
             // prgBar
             // 
+            this.prgBar.BackColor = System.Drawing.SystemColors.Control;
             this.prgBar.Location = new System.Drawing.Point(172, 252);
             this.prgBar.Name = "prgBar";
             this.prgBar.Size = new System.Drawing.Size(489, 23);
@@ -453,6 +470,7 @@
             this.monCalenCitas.Name = "monCalenCitas";
             this.monCalenCitas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.monCalenCitas.TabIndex = 2;
+            this.monCalenCitas.Leave += new System.EventHandler(this.FormAltaCliente_Load);
             // 
             // btAceptar
             // 
@@ -487,23 +505,7 @@
             // OpFDia
             // 
             this.OpFDia.DefaultExt = "jpg";
-            this.OpFDia.FileName = "dialogoLogo";
-            // 
-            // masTBNIF
-            // 
-            this.masTBNIF.Location = new System.Drawing.Point(566, 53);
-            this.masTBNIF.Mask = "L-00000000";
-            this.masTBNIF.Name = "masTBNIF";
-            this.masTBNIF.Size = new System.Drawing.Size(121, 20);
-            this.masTBNIF.TabIndex = 24;
-            // 
-            // masTBTlf
-            // 
-            this.masTBTlf.Location = new System.Drawing.Point(566, 99);
-            this.masTBTlf.Mask = "(999)000-0000";
-            this.masTBTlf.Name = "masTBTlf";
-            this.masTBTlf.Size = new System.Drawing.Size(121, 20);
-            this.masTBTlf.TabIndex = 25;
+            this.OpFDia.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog_FileOk);
             // 
             // FormAltaCliente
             // 
@@ -518,6 +520,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo cliente";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAltaCliente_FormClosing);
+            this.Load += new System.EventHandler(this.FormAltaCliente_Load);
             this.tbControlCliente.ResumeLayout(false);
             this.tPageDatGene.ResumeLayout(false);
             this.tPageDatGene.PerformLayout();

@@ -35,6 +35,7 @@
             this.acepBoton = new System.Windows.Forms.Button();
             this.canBoton = new System.Windows.Forms.Button();
             this.btnRegistro = new System.Windows.Forms.Button();
+            this.lablWeb = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // usuLbl
@@ -94,6 +95,7 @@
             this.canBoton.TabIndex = 5;
             this.canBoton.Text = "CANCELAR";
             this.canBoton.UseVisualStyleBackColor = true;
+            this.canBoton.Click += new System.EventHandler(this.canBoton_Click);
             // 
             // btnRegistro
             // 
@@ -105,6 +107,17 @@
             this.btnRegistro.UseVisualStyleBackColor = true;
             this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
+            // lablWeb
+            // 
+            this.lablWeb.AutoSize = true;
+            this.lablWeb.Location = new System.Drawing.Point(22, 409);
+            this.lablWeb.Name = "lablWeb";
+            this.lablWeb.Size = new System.Drawing.Size(149, 13);
+            this.lablWeb.TabIndex = 7;
+            this.lablWeb.TabStop = true;
+            this.lablWeb.Text = "www.ies.elcanaveral.mostoles";
+            this.lablWeb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lablWeb_LinkClicked);
+            // 
             // Form_Registro
             // 
             this.AcceptButton = this.acepBoton;
@@ -113,6 +126,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CancelButton = this.canBoton;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lablWeb);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.canBoton);
             this.Controls.Add(this.acepBoton);
@@ -123,6 +137,7 @@
             this.Name = "Form_Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso al portal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Registro_FormClosed);
             this.Load += new System.EventHandler(this.FormRegistro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,6 +153,7 @@
         private System.Windows.Forms.Button acepBoton;
         private System.Windows.Forms.Button canBoton;
         private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.LinkLabel lablWeb;
     }
 }
 

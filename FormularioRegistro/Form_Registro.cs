@@ -56,8 +56,8 @@ namespace FormularioRegistro
                     usuBox.Clear();
                     pswBox.Clear();
                     Form_Principal principal = new Form_Principal();
-                    principal.Show();
-                    this.Close();
+                    principal.ShowDialog();
+                  
                 }
             }
             else
@@ -80,6 +80,22 @@ namespace FormularioRegistro
             FormAltaUsuarios usu = new FormAltaUsuarios();
             usu.ShowDialog();
         }
+
+        private void lablWeb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://site.educa.madrid.org/ies.elcanaveral.mostoles/");
+        }
+
+        private void canBoton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form_Registro_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         //private string[] listaUsuariosNombre = new string[6];
         //private string[] listaUsuariosClave  = new string[6];
         /*
