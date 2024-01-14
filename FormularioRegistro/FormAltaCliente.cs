@@ -29,8 +29,7 @@ namespace FormularioRegistro
             tbNomRepresen.Clear();
             tbCorreo.Clear();
             masTBNIF.ResetText();
-            // tipoCliente;
-            nUdDescuen.ResetText();
+            domUDDescu.ResetText();
             tBComent.Clear();
             tbLogo.Clear();
             masTBTlf.Clear();
@@ -61,12 +60,6 @@ namespace FormularioRegistro
                 tbCiudad.BackColor = Color.Red;
                 crear = false;
             }
-            //Pais
-            else if (string.IsNullOrWhiteSpace(cbPais.Text))
-            {
-                cbPais.BackColor = Color.Red;
-                crear = false;
-            }
             //Nombre representante
             else if (string.IsNullOrWhiteSpace(tbNomRepresen.Text))
             {
@@ -79,10 +72,10 @@ namespace FormularioRegistro
                 tbCorreo.BackColor = Color.Red;
                 MessageBox.Show("Dni no válido, Ej.: loquesea@sea.sea");
                 crear = false;
-            }
+            }       
             //nif
             else if (string.IsNullOrWhiteSpace(masTBNIF.Text))
-            {
+            {              
                 masTBNIF.BackColor = Color.Red;
                 crear = false;
             }
@@ -97,17 +90,23 @@ namespace FormularioRegistro
             {
                 masTBTlf.BackColor = Color.Red;
                 crear = false;
-            }     
+            }
+            //Pais
+            else if (string.IsNullOrWhiteSpace(cbPais.Text))
+            {
+                MessageBox.Show("Selecciona un país");
+                crear = false;
+            }
             //TipoCliente
             else if (!comprobarRadioButton())
             {
                 MessageBox.Show("El tipo de cliente debe ser seleccionado");
                 crear = false;
-            }
-    
+            }                   
             //logo
             else if (string.IsNullOrWhiteSpace(tbLogo.Text))
             {
+                MessageBox.Show("El logo debe ser seleccionado");
                 tbLogo.BackColor = Color.Red;
                 crear = false;
             }
@@ -139,12 +138,17 @@ namespace FormularioRegistro
                 {
                     tBComent.Text = "Sin información";                 
                 }
+                //Descuento
+                if (string.IsNullOrWhiteSpace(domUDDescu.Text))
+                {
+                    domUDDescu.Text = "0";                
+                }
 
                 string tipoCli = tipoCliente();
-
+               
 
                 Cliente cli = new Cliente(tbNombre.Text, tbDirecc.Text, tbCiudad.Text, cbPais.Text, tbNomRepresen.Text,
-                                          tbCorreo.Text, masTBNIF.Text, tipoCli, int.Parse(nUdDescuen.Value.ToString()),
+                                          tbCorreo.Text, masTBNIF.Text, tipoCli, int.Parse(domUDDescu.Text.ToString()),
                                           tBComent.Text, tbLogo.Text, masTBTlf.Text, DateTime.Today,
                                           monCalenCitas.TodayDate, Convert.ToDateTime(dTPCitas.Value));
 
@@ -156,7 +160,20 @@ namespace FormularioRegistro
                 tbNombre.BackColor = Color.White;
                 ///todos campos a blanco
                 MessageBox.Show("Cliente creado con éxito");
-                
+                tbNombre.Clear();
+                tbDirecc.Clear();
+                tbCiudad.Clear();
+                cbPais.ResetText();
+                tbNomRepresen.Clear();
+                tbCorreo.Clear();
+                masTBNIF.ResetText();
+                domUDDescu.ResetText();
+                tBComent.Clear();
+                tbLogo.Clear();
+                masTBTlf.Clear();
+                dTPCitas.ResetText();
+                monCalenCitas.ResetText();
+
             }
         }
         public bool comprobarRadioButton()

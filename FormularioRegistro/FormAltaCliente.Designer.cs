@@ -48,7 +48,6 @@
             this.lblNRepre = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.tPageDatPriv = new System.Windows.Forms.TabPage();
-            this.nUdDescuen = new System.Windows.Forms.NumericUpDown();
             this.tBComent = new System.Windows.Forms.TextBox();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
@@ -72,10 +71,10 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.domUDDescu = new System.Windows.Forms.DomainUpDown();
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUdDescuen)).BeginInit();
             this.gbTipoCli.SuspendLayout();
             this.tPageLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
@@ -265,7 +264,7 @@
             // 
             // tPageDatPriv
             // 
-            this.tPageDatPriv.Controls.Add(this.nUdDescuen);
+            this.tPageDatPriv.Controls.Add(this.domUDDescu);
             this.tPageDatPriv.Controls.Add(this.tBComent);
             this.tPageDatPriv.Controls.Add(this.lblComen);
             this.tPageDatPriv.Controls.Add(this.lblDescu);
@@ -277,18 +276,6 @@
             this.tPageDatPriv.TabIndex = 1;
             this.tPageDatPriv.Text = "Datos Privados";
             this.tPageDatPriv.UseVisualStyleBackColor = true;
-            // 
-            // nUdDescuen
-            // 
-            this.nUdDescuen.Location = new System.Drawing.Point(135, 164);
-            this.nUdDescuen.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.nUdDescuen.Name = "nUdDescuen";
-            this.nUdDescuen.Size = new System.Drawing.Size(120, 20);
-            this.nUdDescuen.TabIndex = 5;
             // 
             // tBComent
             // 
@@ -508,6 +495,23 @@
             this.OpFDia.DefaultExt = "jpg";
             this.OpFDia.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog_FileOk);
             // 
+            // domUDDescu
+            // 
+            this.domUDDescu.Items.Add("10");
+            this.domUDDescu.Items.Add("15");
+            this.domUDDescu.Items.Add("20");
+            this.domUDDescu.Items.Add("25");
+            this.domUDDescu.Items.Add("30");
+            this.domUDDescu.Items.Add("5");
+            this.domUDDescu.Location = new System.Drawing.Point(135, 165);
+            this.domUDDescu.Name = "domUDDescu";
+            this.domUDDescu.ReadOnly = true;
+            this.domUDDescu.Size = new System.Drawing.Size(120, 20);
+            this.domUDDescu.Sorted = true;
+            this.domUDDescu.TabIndex = 7;
+            this.domUDDescu.Text = "0";
+            this.domUDDescu.Wrap = true;
+            // 
             // FormAltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -527,7 +531,6 @@
             this.tPageDatGene.PerformLayout();
             this.tPageDatPriv.ResumeLayout(false);
             this.tPageDatPriv.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUdDescuen)).EndInit();
             this.gbTipoCli.ResumeLayout(false);
             this.gbTipoCli.PerformLayout();
             this.tPageLogo.ResumeLayout(false);
@@ -572,7 +575,6 @@
         private System.Windows.Forms.TextBox tBComent;
         private System.Windows.Forms.Label lblComen;
         private System.Windows.Forms.Label lblDescu;
-        private System.Windows.Forms.NumericUpDown nUdDescuen;
         private System.Windows.Forms.TextBox tbLogo;
         private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.DateTimePicker dTPCitas;
@@ -584,5 +586,6 @@
         private System.Windows.Forms.MaskedTextBox masTBTlf;
         private System.Windows.Forms.MaskedTextBox masTBNIF;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.DomainUpDown domUDDescu;
     }
 }
