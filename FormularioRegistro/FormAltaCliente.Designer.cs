@@ -48,7 +48,7 @@
             this.lblNRepre = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.tPageDatPriv = new System.Windows.Forms.TabPage();
-            this.tBComent = new System.Windows.Forms.TextBox();
+            this.domUDDescu = new System.Windows.Forms.DomainUpDown();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
             this.gbTipoCli = new System.Windows.Forms.GroupBox();
@@ -71,11 +71,20 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.domUDDescu = new System.Windows.Forms.DomainUpDown();
+            this.lBoxSector = new System.Windows.Forms.ListBox();
+            this.doUDSector = new System.Windows.Forms.DomainUpDown();
+            this.richtbComent = new System.Windows.Forms.RichTextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.btnColor = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnFont = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
             this.gbTipoCli.SuspendLayout();
+            this.tPageSector.SuspendLayout();
             this.tPageLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tPageCitas.SuspendLayout();
@@ -264,8 +273,11 @@
             // 
             // tPageDatPriv
             // 
+            this.tPageDatPriv.Controls.Add(this.btnExport);
+            this.tPageDatPriv.Controls.Add(this.btnFont);
+            this.tPageDatPriv.Controls.Add(this.btnColor);
+            this.tPageDatPriv.Controls.Add(this.richtbComent);
             this.tPageDatPriv.Controls.Add(this.domUDDescu);
-            this.tPageDatPriv.Controls.Add(this.tBComent);
             this.tPageDatPriv.Controls.Add(this.lblComen);
             this.tPageDatPriv.Controls.Add(this.lblDescu);
             this.tPageDatPriv.Controls.Add(this.gbTipoCli);
@@ -277,13 +289,22 @@
             this.tPageDatPriv.Text = "Datos Privados";
             this.tPageDatPriv.UseVisualStyleBackColor = true;
             // 
-            // tBComent
+            // domUDDescu
             // 
-            this.tBComent.Location = new System.Drawing.Point(135, 207);
-            this.tBComent.Multiline = true;
-            this.tBComent.Name = "tBComent";
-            this.tBComent.Size = new System.Drawing.Size(511, 78);
-            this.tBComent.TabIndex = 6;
+            this.domUDDescu.Items.Add("10");
+            this.domUDDescu.Items.Add("15");
+            this.domUDDescu.Items.Add("20");
+            this.domUDDescu.Items.Add("25");
+            this.domUDDescu.Items.Add("30");
+            this.domUDDescu.Items.Add("5");
+            this.domUDDescu.Location = new System.Drawing.Point(135, 165);
+            this.domUDDescu.Name = "domUDDescu";
+            this.domUDDescu.ReadOnly = true;
+            this.domUDDescu.Size = new System.Drawing.Size(120, 20);
+            this.domUDDescu.Sorted = true;
+            this.domUDDescu.TabIndex = 7;
+            this.domUDDescu.Text = "0";
+            this.domUDDescu.Wrap = true;
             // 
             // lblComen
             // 
@@ -362,6 +383,9 @@
             // 
             // tPageSector
             // 
+            this.tPageSector.Controls.Add(this.listView1);
+            this.tPageSector.Controls.Add(this.doUDSector);
+            this.tPageSector.Controls.Add(this.lBoxSector);
             this.tPageSector.Location = new System.Drawing.Point(4, 22);
             this.tPageSector.Name = "tPageSector";
             this.tPageSector.Padding = new System.Windows.Forms.Padding(3);
@@ -493,24 +517,68 @@
             // OpFDia
             // 
             this.OpFDia.DefaultExt = "jpg";
-            this.OpFDia.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog_FileOk);
             // 
-            // domUDDescu
+            // lBoxSector
             // 
-            this.domUDDescu.Items.Add("10");
-            this.domUDDescu.Items.Add("15");
-            this.domUDDescu.Items.Add("20");
-            this.domUDDescu.Items.Add("25");
-            this.domUDDescu.Items.Add("30");
-            this.domUDDescu.Items.Add("5");
-            this.domUDDescu.Location = new System.Drawing.Point(135, 165);
-            this.domUDDescu.Name = "domUDDescu";
-            this.domUDDescu.ReadOnly = true;
-            this.domUDDescu.Size = new System.Drawing.Size(120, 20);
-            this.domUDDescu.Sorted = true;
-            this.domUDDescu.TabIndex = 7;
-            this.domUDDescu.Text = "0";
-            this.domUDDescu.Wrap = true;
+            this.lBoxSector.FormattingEnabled = true;
+            this.lBoxSector.Location = new System.Drawing.Point(36, 26);
+            this.lBoxSector.Name = "lBoxSector";
+            this.lBoxSector.Size = new System.Drawing.Size(256, 186);
+            this.lBoxSector.TabIndex = 2;
+            // 
+            // doUDSector
+            // 
+            this.doUDSector.Location = new System.Drawing.Point(235, 248);
+            this.doUDSector.Name = "doUDSector";
+            this.doUDSector.Size = new System.Drawing.Size(223, 20);
+            this.doUDSector.TabIndex = 3;
+            // 
+            // richtbComent
+            // 
+            this.richtbComent.Location = new System.Drawing.Point(135, 207);
+            this.richtbComent.Name = "richtbComent";
+            this.richtbComent.Size = new System.Drawing.Size(478, 86);
+            this.richtbComent.TabIndex = 8;
+            this.richtbComent.Text = "";
+            // 
+            // btnColor
+            // 
+            this.btnColor.Location = new System.Drawing.Point(630, 207);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(75, 23);
+            this.btnColor.TabIndex = 9;
+            this.btnColor.Text = "COLOR";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(429, 26);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(235, 186);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnFont
+            // 
+            this.btnFont.Location = new System.Drawing.Point(630, 236);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(75, 23);
+            this.btnFont.TabIndex = 10;
+            this.btnFont.Text = "FUENTE";
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(630, 265);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "EXPORTAR";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // FormAltaCliente
             // 
@@ -533,6 +601,7 @@
             this.tPageDatPriv.PerformLayout();
             this.gbTipoCli.ResumeLayout(false);
             this.gbTipoCli.PerformLayout();
+            this.tPageSector.ResumeLayout(false);
             this.tPageLogo.ResumeLayout(false);
             this.tPageLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
@@ -572,7 +641,6 @@
         private System.Windows.Forms.RadioButton rbPeq;
         private System.Windows.Forms.RadioButton rbMed;
         private System.Windows.Forms.RadioButton rbGra;
-        private System.Windows.Forms.TextBox tBComent;
         private System.Windows.Forms.Label lblComen;
         private System.Windows.Forms.Label lblDescu;
         private System.Windows.Forms.TextBox tbLogo;
@@ -587,5 +655,14 @@
         private System.Windows.Forms.MaskedTextBox masTBNIF;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.DomainUpDown domUDDescu;
+        private System.Windows.Forms.DomainUpDown doUDSector;
+        private System.Windows.Forms.ListBox lBoxSector;
+        private System.Windows.Forms.RichTextBox richtbComent;
+        private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnFont;
+        private System.Windows.Forms.Button btnExport;
     }
 }

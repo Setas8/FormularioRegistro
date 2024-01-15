@@ -76,6 +76,24 @@ namespace FormularioRegistro
         {
             Application.Exit();
         }
+
+        private void verLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Creación de un objeto FolderBrowserDialog:
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.SelectedPath = ".";
+            // Mostrar el cuadro de diálogo para seleccionar un directorio
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                FormLogs logs = new FormLogs();
+                //propiedad pública del formulario log
+                FormLogs.directorio = folderBrowserDialog.SelectedPath;
+
+                logs.Show();
+
+            }
+
+        }
     }
 }
 /*

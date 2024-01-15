@@ -5,11 +5,13 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace FormularioRegistro
 {
@@ -30,7 +32,7 @@ namespace FormularioRegistro
             tbCorreo.Clear();
             masTBNIF.ResetText();
             domUDDescu.ResetText();
-            tBComent.Clear();
+            richtbComent.Clear();
             tbLogo.Clear();
             masTBTlf.Clear();
             dTPCitas.ResetText();
@@ -134,9 +136,9 @@ namespace FormularioRegistro
             {
 
                 //comentarios
-                if (string.IsNullOrWhiteSpace(tBComent.Text))
+                if (string.IsNullOrWhiteSpace(richtbComent.Text))
                 {
-                    tBComent.Text = "Sin información";                 
+                    richtbComent.Text = "Sin información";                 
                 }
                 //Descuento
                 if (string.IsNullOrWhiteSpace(domUDDescu.Text))
@@ -149,7 +151,7 @@ namespace FormularioRegistro
 
                 Cliente cli = new Cliente(tbNombre.Text, tbDirecc.Text, tbCiudad.Text, cbPais.Text, tbNomRepresen.Text,
                                           tbCorreo.Text, masTBNIF.Text, tipoCli, int.Parse(domUDDescu.Text.ToString()),
-                                          tBComent.Text, tbLogo.Text, masTBTlf.Text, DateTime.Today,
+                                          richtbComent.Text, tbLogo.Text, masTBTlf.Text, DateTime.Today,
                                           monCalenCitas.TodayDate, Convert.ToDateTime(dTPCitas.Value));
 
                 MessageBox.Show(cli.Nombre + " " + cli.Direccion + " " + cli.Ciudad + " " + cli.Pais
@@ -168,7 +170,7 @@ namespace FormularioRegistro
                 tbCorreo.Clear();
                 masTBNIF.ResetText();
                 domUDDescu.ResetText();
-                tBComent.Clear();
+                richtbComent.Clear();
                 tbLogo.Clear();
                 masTBTlf.Clear();
                 dTPCitas.ResetText();
@@ -230,33 +232,59 @@ namespace FormularioRegistro
         private void btnFileDialog_Click(object sender, EventArgs e)
         {
          
-            OpFDia.ShowDialog();
-            OpFDia.Filter = "Archivos JPEG|*.jpg";
-            OpFDia.Title = "Seleccionar archivo JPEG";
-            OpFDia.Tag = OpFDia.FileName;
-            tbLogo.Text = OpFDia.SafeFileName;
-            picBox.ImageLocation = OpFDia.FileName;
+            
+            OpFDia.Filter = "Imágenes|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos|*.*";
+            OpFDia.Title = "Seleccionar archivo de imagen";          
+            
+            
 
 
+            DialogResult result = OpFDia.ShowDialog();
 
+            // Procesa el resultado del cuadro de diálogo
+            if (result == DialogResult.OK)
+            {
+                // Obtiene la ruta del archivo seleccionado
+                string rutaOrigen = OpFDia.FileName;
+
+                // Guarda la imagen en una nueva ubicación
+                guardarImagen(rutaOrigen);
+            }
 
 
         }
-        private void OpenFileDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        private void guardarImagen(string rutaOrigen)
         {
-            // Este evento se desencadena antes de que el cuadro de diálogo se cierre
-            // Puedes realizar validaciones adicionales aquí
-            prgBar.Value = progresoActual;
-            timer.Start();
-            timer.Tick += Timer_Tick;
-                     
-            if (!archivoCorrecto(OpFDia.FileName))
-            {
-                MessageBox.Show("El archivo no cumple con los criterios requeridos");
-                e.Cancel = true; // Cancela la operación de apertura del archivo
-            }
+            // Configura el SaveFileDialog para seleccionar la nueva ubicación y nombre del archivo
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Imágenes|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos|*.*";
+            saveFileDialog.Title = "Guardar imagen en un nuevo directorio";
 
-        }         
+            // Muestra el cuadro de diálogo
+            DialogResult result = saveFileDialog.ShowDialog();
+
+            // Procesa el resultado del cuadro de diálogo
+            if (result == DialogResult.OK)
+            {
+                // Obtiene la nueva ruta donde se guardará la imagen
+                string nuevaRuta = saveFileDialog.FileName;
+
+                // Copia la imagen desde la ruta de origen a la nueva ubicación
+                try
+                {
+                    File.Copy(rutaOrigen, nuevaRuta, true);
+                    MessageBox.Show("Imagen guardada exitosamente en: " + nuevaRuta, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);             
+                    tbLogo.Text = OpFDia.SafeFileName;
+                    prgBar.Value = progresoActual;
+                    timer.Start();
+                    timer.Tick += Timer_Tick;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al guardar la imagen: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }     
         private void Timer_Tick(object sender, EventArgs e)
         {                     
             progresoActual += 10;
@@ -265,16 +293,12 @@ namespace FormularioRegistro
            
             // Si llega al máximo se para el timer
             if (progresoActual >= prgBar.Maximum)
-            {              
+            {
+                picBox.ImageLocation = OpFDia.FileName;
                 timer.Stop();               
                 progresoActual = 0;
                 timer.Tick -= Timer_Tick;
             }          
-        }
-        private bool archivoCorrecto(string filePath)
-        {
-
-            return filePath.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase);
         }
         private void ShowAWeeksVacationOneMonthFromToday()
         {
@@ -290,6 +314,42 @@ namespace FormularioRegistro
         {
             ShowAWeeksVacationOneMonthFromToday();
             monCalenCitas.AddBoldedDate(new DateTime(2024, 10, 1));
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richtbComent.SelectionColor = colorDialog1.Color;              
+            }
+        }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {            
+                richtbComent.SelectionFont = fontDialog1.Font;
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            var rutaAArchivo = string.Empty;
+            using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        richtbComent.SaveFile(saveFileDialog1.FileName);
+                        MessageBox.Show("Datos exportados");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Datos NO exportados");
+                    }
+                }
+            }
         }
 
         /*      
