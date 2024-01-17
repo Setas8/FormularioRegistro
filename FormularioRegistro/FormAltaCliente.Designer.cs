@@ -48,6 +48,10 @@
             this.lblNRepre = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.tPageDatPriv = new System.Windows.Forms.TabPage();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnFont = new System.Windows.Forms.Button();
+            this.btnColor = new System.Windows.Forms.Button();
+            this.richtbComent = new System.Windows.Forms.RichTextBox();
             this.domUDDescu = new System.Windows.Forms.DomainUpDown();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
@@ -57,6 +61,9 @@
             this.rbMed = new System.Windows.Forms.RadioButton();
             this.rbGra = new System.Windows.Forms.RadioButton();
             this.tPageSector = new System.Windows.Forms.TabPage();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.doUDSector = new System.Windows.Forms.DomainUpDown();
+            this.lBoxSector = new System.Windows.Forms.ListBox();
             this.tPageLogo = new System.Windows.Forms.TabPage();
             this.picBox = new System.Windows.Forms.PictureBox();
             this.prgBar = new System.Windows.Forms.ProgressBar();
@@ -71,15 +78,12 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.OpFDia = new System.Windows.Forms.OpenFileDialog();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.lBoxSector = new System.Windows.Forms.ListBox();
-            this.doUDSector = new System.Windows.Forms.DomainUpDown();
-            this.richtbComent = new System.Windows.Forms.RichTextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnColor = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnFont = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
+            this.cMenuStripComent = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
@@ -88,6 +92,7 @@
             this.tPageLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tPageCitas.SuspendLayout();
+            this.cMenuStripComent.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbControlCliente
@@ -289,6 +294,45 @@
             this.tPageDatPriv.Text = "Datos Privados";
             this.tPageDatPriv.UseVisualStyleBackColor = true;
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(630, 265);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "EXPORTAR";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnFont
+            // 
+            this.btnFont.Location = new System.Drawing.Point(630, 236);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(75, 23);
+            this.btnFont.TabIndex = 10;
+            this.btnFont.Text = "FUENTE";
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
+            // btnColor
+            // 
+            this.btnColor.Location = new System.Drawing.Point(630, 207);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(75, 23);
+            this.btnColor.TabIndex = 9;
+            this.btnColor.Text = "COLOR";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // richtbComent
+            // 
+            this.richtbComent.ContextMenuStrip = this.cMenuStripComent;
+            this.richtbComent.Location = new System.Drawing.Point(135, 207);
+            this.richtbComent.Name = "richtbComent";
+            this.richtbComent.Size = new System.Drawing.Size(478, 86);
+            this.richtbComent.TabIndex = 8;
+            this.richtbComent.Text = "";
+            // 
             // domUDDescu
             // 
             this.domUDDescu.Items.Add("10");
@@ -393,6 +437,30 @@
             this.tPageSector.TabIndex = 2;
             this.tPageSector.Text = "Sector";
             this.tPageSector.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(429, 26);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(235, 186);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // doUDSector
+            // 
+            this.doUDSector.Location = new System.Drawing.Point(235, 248);
+            this.doUDSector.Name = "doUDSector";
+            this.doUDSector.Size = new System.Drawing.Size(223, 20);
+            this.doUDSector.TabIndex = 3;
+            // 
+            // lBoxSector
+            // 
+            this.lBoxSector.FormattingEnabled = true;
+            this.lBoxSector.Location = new System.Drawing.Point(36, 26);
+            this.lBoxSector.Name = "lBoxSector";
+            this.lBoxSector.Size = new System.Drawing.Size(256, 186);
+            this.lBoxSector.TabIndex = 2;
             // 
             // tPageLogo
             // 
@@ -518,67 +586,35 @@
             // 
             this.OpFDia.DefaultExt = "jpg";
             // 
-            // lBoxSector
+            // cMenuStripComent
             // 
-            this.lBoxSector.FormattingEnabled = true;
-            this.lBoxSector.Location = new System.Drawing.Point(36, 26);
-            this.lBoxSector.Name = "lBoxSector";
-            this.lBoxSector.Size = new System.Drawing.Size(256, 186);
-            this.lBoxSector.TabIndex = 2;
+            this.cMenuStripComent.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorToolStripMenuItem,
+            this.fuenteToolStripMenuItem,
+            this.exportarToolStripMenuItem});
+            this.cMenuStripComent.Name = "cMenuStripComent";
+            this.cMenuStripComent.Size = new System.Drawing.Size(181, 92);
             // 
-            // doUDSector
+            // colorToolStripMenuItem
             // 
-            this.doUDSector.Location = new System.Drawing.Point(235, 248);
-            this.doUDSector.Name = "doUDSector";
-            this.doUDSector.Size = new System.Drawing.Size(223, 20);
-            this.doUDSector.TabIndex = 3;
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
-            // richtbComent
+            // fuenteToolStripMenuItem
             // 
-            this.richtbComent.Location = new System.Drawing.Point(135, 207);
-            this.richtbComent.Name = "richtbComent";
-            this.richtbComent.Size = new System.Drawing.Size(478, 86);
-            this.richtbComent.TabIndex = 8;
-            this.richtbComent.Text = "";
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
             // 
-            // btnColor
+            // exportarToolStripMenuItem
             // 
-            this.btnColor.Location = new System.Drawing.Point(630, 207);
-            this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(75, 23);
-            this.btnColor.TabIndex = 9;
-            this.btnColor.Text = "COLOR";
-            this.btnColor.UseVisualStyleBackColor = true;
-            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(429, 26);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(235, 186);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnFont
-            // 
-            this.btnFont.Location = new System.Drawing.Point(630, 236);
-            this.btnFont.Name = "btnFont";
-            this.btnFont.Size = new System.Drawing.Size(75, 23);
-            this.btnFont.TabIndex = 10;
-            this.btnFont.Text = "FUENTE";
-            this.btnFont.UseVisualStyleBackColor = true;
-            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
-            // 
-            // btnExport
-            // 
-            this.btnExport.Location = new System.Drawing.Point(630, 265);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 23);
-            this.btnExport.TabIndex = 11;
-            this.btnExport.Text = "EXPORTAR";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportarToolStripMenuItem.Text = "Exportar";
+            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click);
             // 
             // FormAltaCliente
             // 
@@ -606,6 +642,7 @@
             this.tPageLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.tPageCitas.ResumeLayout(false);
+            this.cMenuStripComent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,5 +701,9 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnFont;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.ContextMenuStrip cMenuStripComent;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
     }
 }

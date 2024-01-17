@@ -352,6 +352,44 @@ namespace FormularioRegistro
             }
         }
 
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richtbComent.SelectionColor = colorDialog1.Color;
+            }
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richtbComent.SelectionFont = fontDialog1.Font;
+            }
+        }
+
+        private void exportarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rutaAArchivo = string.Empty;
+            using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        richtbComent.SaveFile(saveFileDialog1.FileName);
+                        MessageBox.Show("Datos exportados");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Datos NO exportados");
+                    }
+                }
+            }
+        }
+
+
+
         /*      
 ErrorProvider errorProvider1 = new ErrorProvider();
 ErrorProvider errorProvider2 = new ErrorProvider();
