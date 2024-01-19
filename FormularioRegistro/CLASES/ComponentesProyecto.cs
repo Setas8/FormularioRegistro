@@ -39,11 +39,11 @@ namespace FormularioRegistro.CLASES
         {
             this.porcentajeDedicacion = porcentaje;
         }
-        public bool esJefe()
+        public bool esJefe(string jefePro)
         {
             bool jefe = false;
 
-            if (this.puesto.Equals("Jefe de proyecto", StringComparison.OrdinalIgnoreCase))
+            if (jefePro.Equals("Jefe de proyecto", StringComparison.OrdinalIgnoreCase))
                 jefe = true;
 
             return jefe;

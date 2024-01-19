@@ -64,6 +64,7 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.componenteProyectoMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -255,7 +256,8 @@
             this.proyectosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaProyectoMenu,
             this.modificacionProyectosTSM,
-            this.listadosProyectosMenu});
+            this.listadosProyectosMenu,
+            this.componenteProyectoMenu});
             this.proyectosToolStripMenuItem1.Name = "proyectosToolStripMenuItem1";
             this.proyectosToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
             this.proyectosToolStripMenuItem1.Text = "Proyectos";
@@ -263,20 +265,20 @@
             // altaProyectoMenu
             // 
             this.altaProyectoMenu.Name = "altaProyectoMenu";
-            this.altaProyectoMenu.Size = new System.Drawing.Size(144, 22);
+            this.altaProyectoMenu.Size = new System.Drawing.Size(180, 22);
             this.altaProyectoMenu.Text = "Alta";
             this.altaProyectoMenu.Click += new System.EventHandler(this.altaProyectoMenu_Click);
             // 
             // modificacionProyectosTSM
             // 
             this.modificacionProyectosTSM.Name = "modificacionProyectosTSM";
-            this.modificacionProyectosTSM.Size = new System.Drawing.Size(144, 22);
+            this.modificacionProyectosTSM.Size = new System.Drawing.Size(180, 22);
             this.modificacionProyectosTSM.Text = "Modificación";
             // 
             // listadosProyectosMenu
             // 
             this.listadosProyectosMenu.Name = "listadosProyectosMenu";
-            this.listadosProyectosMenu.Size = new System.Drawing.Size(144, 22);
+            this.listadosProyectosMenu.Size = new System.Drawing.Size(180, 22);
             this.listadosProyectosMenu.Text = "Listados";
             this.listadosProyectosMenu.Click += new System.EventHandler(this.listadosProyectosMenu_Click);
             // 
@@ -319,7 +321,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // verLogsToolStripMenuItem
@@ -328,6 +330,13 @@
             this.verLogsToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.verLogsToolStripMenuItem.Text = "Ver Logs";
             this.verLogsToolStripMenuItem.Click += new System.EventHandler(this.verLogsToolStripMenuItem_Click);
+            // 
+            // componenteProyectoMenu
+            // 
+            this.componenteProyectoMenu.Name = "componenteProyectoMenu";
+            this.componenteProyectoMenu.Size = new System.Drawing.Size(180, 22);
+            this.componenteProyectoMenu.Text = "Componentes";
+            this.componenteProyectoMenu.Click += new System.EventHandler(this.componenteProyectoMenu_Click);
             // 
             // Form_Principal
             // 
@@ -386,5 +395,6 @@
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verLogsToolStripMenuItem;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.ToolStripMenuItem componenteProyectoMenu;
     }
 }

@@ -94,6 +94,12 @@ namespace FormularioRegistro
             }
 
         }
+
+        private void componenteProyectoMenu_Click(object sender, EventArgs e)
+        {
+            FormComponentesProyectos compo = new FormComponentesProyectos();
+            compo.ShowDialog();
+        }
     }
 }
 /*
