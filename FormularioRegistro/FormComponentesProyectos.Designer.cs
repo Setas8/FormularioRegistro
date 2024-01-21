@@ -62,7 +62,7 @@
             this.btnAddEmple.TabIndex = 0;
             this.btnAddEmple.Text = "AÑADIR";
             this.btnAddEmple.UseVisualStyleBackColor = true;
-            this.btnAddEmple.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAddEmple.Click += new System.EventHandler(this.btnAddEmple_Click);
             // 
             // btnEliminarEmple
             // 
@@ -72,7 +72,7 @@
             this.btnEliminarEmple.TabIndex = 1;
             this.btnEliminarEmple.Text = "ELIMINAR";
             this.btnEliminarEmple.UseVisualStyleBackColor = true;
-            this.btnEliminarEmple.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnEliminarEmple.Click += new System.EventHandler(this.btnEliminarEmple_Click);
             // 
             // cmBxProyectos
             // 
@@ -86,7 +86,7 @@
             // liBxEmpleados
             // 
             this.liBxEmpleados.FormattingEnabled = true;
-            this.liBxEmpleados.Location = new System.Drawing.Point(151, 34);
+            this.liBxEmpleados.Location = new System.Drawing.Point(121, 34);
             this.liBxEmpleados.Name = "liBxEmpleados";
             this.liBxEmpleados.Size = new System.Drawing.Size(284, 264);
             this.liBxEmpleados.TabIndex = 1;
@@ -244,6 +244,7 @@
             this.btnAddPro.TabIndex = 15;
             this.btnAddPro.Text = "AÑADIR";
             this.btnAddPro.UseVisualStyleBackColor = true;
+            this.btnAddPro.Click += new System.EventHandler(this.btnAddPro_Click);
             // 
             // btnAddCompo
             // 
@@ -271,6 +272,7 @@
             this.btnResetCompo.TabIndex = 18;
             this.btnResetCompo.Text = "BORRAR";
             this.btnResetCompo.UseVisualStyleBackColor = true;
+            this.btnResetCompo.Click += new System.EventHandler(this.btnResetCompo_Click);
             // 
             // tBDedica
             // 

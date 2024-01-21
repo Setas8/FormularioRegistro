@@ -341,3 +341,4 @@ C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormLogs.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormLogs.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormComponentesProyectos.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormComponentesProyectos.resources

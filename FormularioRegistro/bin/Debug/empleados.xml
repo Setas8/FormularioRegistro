@@ -1,75 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfEmpleado>
   <Empleado>
-    <Dni>11111111A</Dni>
-    <Nombre>Ricardo</Nombre>
-    <Apellido1>López</Apellido1>
-    <Apellido2>Martínez</Apellido2>
-    <Puesto>Analista</Puesto>
-    <Correo>a@a.com</Correo>
-    <Comentarios>comentarios</Comentarios>
-    <Telefono>666800428</Telefono>
-    <NumSS>86545789556</NumSS>
-    <FechaNacimiento>1980-10-01T00:00:00</FechaNacimiento>
-  </Empleado>
-  <Empleado>
-    <Dni>222222222B</Dni>
-    <Nombre>Raquel</Nombre>
-    <Apellido1>Pérez</Apellido1>
-    <Apellido2>Valcarcel</Apellido2>
-    <Puesto>Programador</Puesto>
-    <Correo>b@b.com</Correo>
-    <Comentarios>comentarios</Comentarios>
-    <Telefono>657895623</Telefono>
-    <NumSS>81236544589</NumSS>
-    <FechaNacimiento>1988-12-14T00:00:00</FechaNacimiento>
-  </Empleado>
-  <Empleado>
-    <Dni>444444444D</Dni>
-    <Nombre>Luis</Nombre>
-    <Apellido1>Norman</Apellido1>
-    <Apellido2>Gallego</Apellido2>
-    <Puesto>Ventas</Puesto>
-    <Correo>d@d.com</Correo>
-    <Comentarios>comentarios</Comentarios>
-    <Telefono>636528945</Telefono>
-    <NumSS>125895625475</NumSS>
-    <FechaNacimiento>1978-04-23T00:00:00</FechaNacimiento>
-  </Empleado>
-  <Empleado>
-    <Dni>333333333C</Dni>
-    <Nombre>Cristina</Nombre>
-    <Apellido1>Fiol</Apellido1>
-    <Apellido2>Muñoz</Apellido2>
+    <Id>1</Id>
+    <Dni>11111111</Dni>
+    <Nombre>SADF</Nombre>
+    <Apellido1>SDF</Apellido1>
+    <Apellido2>SDF</Apellido2>
     <Puesto>Jefe proyecto</Puesto>
-    <Correo>c@c.com</Correo>
-    <Comentarios>comentarios</Comentarios>
-    <Telefono>647856985</Telefono>
-    <NumSS>87595654895</NumSS>
-    <FechaNacimiento>1999-01-02T00:00:00</FechaNacimiento>
-  </Empleado>
-  <Empleado>
-    <Dni>555555555E</Dni>
-    <Nombre>Ernesto</Nombre>
-    <Apellido1>Gonzalez</Apellido1>
-    <Apellido2>Gonzalez</Apellido2>
-    <Puesto>R.R.H.H</Puesto>
-    <Correo>e@e.com</Correo>
-    <Comentarios>comentarios</Comentarios>
-    <Telefono>659632235</Telefono>
-    <NumSS>84579269585</NumSS>
-    <FechaNacimiento>1986-11-08T00:00:00</FechaNacimiento>
-  </Empleado>
-  <Empleado>
-    <Dni>8888888f</Dni>
-    <Nombre>aaaaaaa</Nombre>
-    <Apellido1>aaaaaaa</Apellido1>
-    <Apellido2>aaaaaaa</Apellido2>
-    <Puesto>Programador</Puesto>
-    <Correo>aaaa@aaaa.com</Correo>
+    <Correo>sdfg@sdg</Correo>
     <Comentarios />
     <Telefono>123456789</Telefono>
     <NumSS>123456789</NumSS>
-    <FechaNacimiento>2005-07-22T12:19:00</FechaNacimiento>
+    <FechaNacimiento>2024-01-21T19:05:42.29392+01:00</FechaNacimiento>
+  </Empleado>
+  <Empleado>
+    <Id>2</Id>
+    <Dni>22222222</Dni>
+    <Nombre>raeytera</Nombre>
+    <Apellido1>safds</Apellido1>
+    <Apellido2>sdaf</Apellido2>
+    <Puesto>Diseñador</Puesto>
+    <Correo>sdfsfg@ythdfs</Correo>
+    <Comentarios />
+    <Telefono>987654321</Telefono>
+    <NumSS>987654321</NumSS>
+    <FechaNacimiento>2024-01-21T19:06:09.8141909+01:00</FechaNacimiento>
   </Empleado>
 </ArrayOfEmpleado>

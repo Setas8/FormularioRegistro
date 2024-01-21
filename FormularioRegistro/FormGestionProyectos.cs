@@ -29,6 +29,7 @@ namespace FormularioRegistro
 
         void crearEtiquetaLista(Proyecto p)
         {
+
             CheckBox chBox1 = new System.Windows.Forms.CheckBox();
             chBox1.AutoSize = true;
             chBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F,

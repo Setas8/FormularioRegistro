@@ -27,7 +27,7 @@ namespace FormularioRegistro
         public Empleado(string dni, string nombre, string apellido1, string apellido2, string puesto, string correo,
                         string comentarios, int telefono, long numSS, DateTime fechaNacimiento)
         {
-            //this.Id = idIncrementado;
+            this.Id = idIncrementado;
             idIncrementado++;
             this.Dni             = dni;
             this.Nombre          = nombre;
@@ -42,7 +42,7 @@ namespace FormularioRegistro
         }
         public Empleado(string dni, string nombre, string apellido1, string apellido2, string puesto, int numSS)
         {
-            //this.Id = idIncrementado;
+            this.Id = idIncrementado;
             idIncrementado++;
             this.Dni       = dni;
             this.Nombre    = nombre;
@@ -54,7 +54,7 @@ namespace FormularioRegistro
 
         public Empleado(string dni, string nombre, int numSS)
         {
-            //this.Id = idIncrementado;
+            this.Id = idIncrementado;
             idIncrementado++;
             this.Dni    = dni;
             this.Nombre = nombre;
