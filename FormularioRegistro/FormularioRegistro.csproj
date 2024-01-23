@@ -78,6 +78,7 @@
     <Compile Include="CLASES\Cliente.cs" />
     <Compile Include="CLASES\ComponentesProyecto.cs" />
     <Compile Include="Controladores\ControladorClientes.cs" />
+    <Compile Include="Controladores\ControladorComponentesProyectos.cs" />
     <Compile Include="Controladores\ControladorEmpleados.cs" />
     <Compile Include="Controladores\ControladorProyectos.cs" />
     <Compile Include="Controladores\ControladorUsuarios.cs" />

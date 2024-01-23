@@ -34,8 +34,7 @@ namespace FormularioRegistro
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            richTBLogs.Text = File.ReadAllText(directorio + "/" +
-            treeVLogs.SelectedNode.Text);
+            richTBLogs.Text = File.ReadAllText(directorio + "/" + treeVLogs.SelectedNode.Text);
         }
     }
 }

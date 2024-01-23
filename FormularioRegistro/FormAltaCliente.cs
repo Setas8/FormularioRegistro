@@ -231,14 +231,10 @@ namespace FormularioRegistro
         int progresoActual = 0;
         private void btnFileDialog_Click(object sender, EventArgs e)
         {
-         
-            
+                   
             OpFDia.Filter = "Imágenes|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos|*.*";
             OpFDia.Title = "Seleccionar archivo de imagen";          
-            
-            
-
-
+                      
             DialogResult result = OpFDia.ShowDialog();
 
             // Procesa el resultado del cuadro de diálogo

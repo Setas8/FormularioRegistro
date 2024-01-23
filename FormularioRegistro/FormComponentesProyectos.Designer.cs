@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAddEmple = new System.Windows.Forms.Button();
-            this.btnEliminarEmple = new System.Windows.Forms.Button();
             this.cmBxProyectos = new System.Windows.Forms.ComboBox();
             this.liBxEmpleados = new System.Windows.Forms.ListBox();
             this.lblProyecto = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@
             this.puestoComBox = new System.Windows.Forms.ComboBox();
             this.btnAddPro = new System.Windows.Forms.Button();
             this.btnAddCompo = new System.Windows.Forms.Button();
-            this.btnEliminarPro = new System.Windows.Forms.Button();
             this.btnResetCompo = new System.Windows.Forms.Button();
             this.tBDedica = new System.Windows.Forms.TextBox();
             this.tBExtras = new System.Windows.Forms.TextBox();
@@ -63,16 +61,6 @@
             this.btnAddEmple.Text = "AÑADIR";
             this.btnAddEmple.UseVisualStyleBackColor = true;
             this.btnAddEmple.Click += new System.EventHandler(this.btnAddEmple_Click);
-            // 
-            // btnEliminarEmple
-            // 
-            this.btnEliminarEmple.Location = new System.Drawing.Point(40, 130);
-            this.btnEliminarEmple.Name = "btnEliminarEmple";
-            this.btnEliminarEmple.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminarEmple.TabIndex = 1;
-            this.btnEliminarEmple.Text = "ELIMINAR";
-            this.btnEliminarEmple.UseVisualStyleBackColor = true;
-            this.btnEliminarEmple.Click += new System.EventHandler(this.btnEliminarEmple_Click);
             // 
             // cmBxProyectos
             // 
@@ -255,15 +243,6 @@
             this.btnAddCompo.Text = "AÑADIR";
             this.btnAddCompo.UseVisualStyleBackColor = true;
             // 
-            // btnEliminarPro
-            // 
-            this.btnEliminarPro.Location = new System.Drawing.Point(40, 400);
-            this.btnEliminarPro.Name = "btnEliminarPro";
-            this.btnEliminarPro.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminarPro.TabIndex = 17;
-            this.btnEliminarPro.Text = "ELIMINAR";
-            this.btnEliminarPro.UseVisualStyleBackColor = true;
-            // 
             // btnResetCompo
             // 
             this.btnResetCompo.Location = new System.Drawing.Point(807, 312);
@@ -296,7 +275,6 @@
             this.Controls.Add(this.tBExtras);
             this.Controls.Add(this.tBDedica);
             this.Controls.Add(this.btnResetCompo);
-            this.Controls.Add(this.btnEliminarPro);
             this.Controls.Add(this.btnAddCompo);
             this.Controls.Add(this.btnAddPro);
             this.Controls.Add(this.puestoComBox);
@@ -315,7 +293,6 @@
             this.Controls.Add(this.lblProyecto);
             this.Controls.Add(this.liBxEmpleados);
             this.Controls.Add(this.cmBxProyectos);
-            this.Controls.Add(this.btnEliminarEmple);
             this.Controls.Add(this.btnAddEmple);
             this.Name = "FormComponentesProyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -329,7 +306,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAddEmple;
-        private System.Windows.Forms.Button btnEliminarEmple;
         private System.Windows.Forms.ComboBox cmBxProyectos;
         private System.Windows.Forms.ListBox liBxEmpleados;
         private System.Windows.Forms.Label lblProyecto;
@@ -348,7 +324,6 @@
         private System.Windows.Forms.ComboBox puestoComBox;
         private System.Windows.Forms.Button btnAddPro;
         private System.Windows.Forms.Button btnAddCompo;
-        private System.Windows.Forms.Button btnEliminarPro;
         private System.Windows.Forms.Button btnResetCompo;
         private System.Windows.Forms.TextBox tBDedica;
         private System.Windows.Forms.TextBox tBExtras;
