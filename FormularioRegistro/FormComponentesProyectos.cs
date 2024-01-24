@@ -25,34 +25,39 @@ namespace FormularioRegistro
             ControladorProyectos.leerProyectosJSON();
             ControladorEmpleados.leerEmpleadosXML();
             mostrarEmpleados();
-            mostrarProyectos();
+            mostrarProyectos();          
+           
         }
-
-       
+      
         private void mostrarEmpleados()
         {
             liBxEmpleados.Items.Clear();
-
       
 
             foreach (Empleado emp in ControladorEmpleados.listaEmpleados)
-            {
+            {        
                 liBxEmpleados.Items.Add(emp.Nombre + "\t\t" + emp.Apellido1 + "\t\t" + emp.Dni);
-                liBxEmpleados.Tag = emp.Id;
-               
+              
             }
 
             liBxEmpleados.Show();
             
         }
-       
-        private void btnAddEmple_Click(object sender, EventArgs e)
+        private void mostrarProyectos()
         {
-           
-            
-            if (liBxEmpleados.SelectedItem != null)
+
+            cmBxProyectos.DataSource = ControladorProyectos.listaProyectos;
+            cmBxProyectos.DisplayMember = "Descripcion";
+            cmBxProyectos.SelectedIndex = 0;
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (liBxEmpleados.SelectedItems.Count != 0)
             {
-                tBIdEmp.Text = liBxEmpleados.Tag.ToString();                          
+                int indice = liBxEmpleados.SelectedIndex;
+                tBIdEmp.Text = ControladorEmpleados.listaEmpleados[indice].Id.ToString();
+                tBCodPro.Text = ((Proyecto)cmBxProyectos.SelectedItem).Codigo.ToString();
+
             }
             else
             {
@@ -60,33 +65,6 @@ namespace FormularioRegistro
             }
         }
 
-        private void btnEliminarEmple_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void mostrarProyectos()
-        {
-            cmBxProyectos.Items.Clear();
-
-            foreach (Proyecto p in ControladorProyectos.listaProyectos)
-            {
-                cmBxProyectos.Items.Add(p.Descripcion);
-                cmBxProyectos.Tag = p.Codigo;
-            }
-
-        }   
-
-        private void btnAddPro_Click(object sender, EventArgs e)
-        {
-            if (cmBxProyectos.SelectedIndex == -1)
-            {
-                tBCodPro.Text = cmBxProyectos.Tag.ToString();
-            }
-            else
-            {
-                MessageBox.Show("Debes seleccionar un proyecto");
-            }
-        }
         private void btnResetCompo_Click(object sender, EventArgs e)
         {
 
@@ -97,5 +75,7 @@ namespace FormularioRegistro
             tBExtras.Clear();
 
         }
+
+       
     }
 }

@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAddEmple = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.cmBxProyectos = new System.Windows.Forms.ComboBox();
             this.liBxEmpleados = new System.Windows.Forms.ListBox();
             this.lblProyecto = new System.Windows.Forms.Label();
@@ -45,22 +46,23 @@
             this.tBCodPro = new System.Windows.Forms.TextBox();
             this.tBIdEmp = new System.Windows.Forms.TextBox();
             this.puestoComBox = new System.Windows.Forms.ComboBox();
-            this.btnAddPro = new System.Windows.Forms.Button();
             this.btnAddCompo = new System.Windows.Forms.Button();
             this.btnResetCompo = new System.Windows.Forms.Button();
             this.tBDedica = new System.Windows.Forms.TextBox();
             this.tBExtras = new System.Windows.Forms.TextBox();
+            this.controladorEmpleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.controladorEmpleadosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAddEmple
+            // btnAdd
             // 
-            this.btnAddEmple.Location = new System.Drawing.Point(40, 87);
-            this.btnAddEmple.Name = "btnAddEmple";
-            this.btnAddEmple.Size = new System.Drawing.Size(75, 23);
-            this.btnAddEmple.TabIndex = 0;
-            this.btnAddEmple.Text = "AÑADIR";
-            this.btnAddEmple.UseVisualStyleBackColor = true;
-            this.btnAddEmple.Click += new System.EventHandler(this.btnAddEmple_Click);
+            this.btnAdd.Location = new System.Drawing.Point(441, 146);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "AÑADIR";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmBxProyectos
             // 
@@ -224,16 +226,6 @@
             this.puestoComBox.Size = new System.Drawing.Size(120, 21);
             this.puestoComBox.TabIndex = 5;
             // 
-            // btnAddPro
-            // 
-            this.btnAddPro.Location = new System.Drawing.Point(40, 360);
-            this.btnAddPro.Name = "btnAddPro";
-            this.btnAddPro.Size = new System.Drawing.Size(75, 23);
-            this.btnAddPro.TabIndex = 15;
-            this.btnAddPro.Text = "AÑADIR";
-            this.btnAddPro.UseVisualStyleBackColor = true;
-            this.btnAddPro.Click += new System.EventHandler(this.btnAddPro_Click);
-            // 
             // btnAddCompo
             // 
             this.btnAddCompo.Location = new System.Drawing.Point(704, 312);
@@ -267,6 +259,10 @@
             this.tBExtras.Size = new System.Drawing.Size(120, 20);
             this.tBExtras.TabIndex = 20;
             // 
+            // controladorEmpleadosBindingSource
+            // 
+            this.controladorEmpleadosBindingSource.DataSource = typeof(FormularioRegistro.Controladores.ControladorEmpleados);
+            // 
             // FormComponentesProyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,7 +272,6 @@
             this.Controls.Add(this.tBDedica);
             this.Controls.Add(this.btnResetCompo);
             this.Controls.Add(this.btnAddCompo);
-            this.Controls.Add(this.btnAddPro);
             this.Controls.Add(this.puestoComBox);
             this.Controls.Add(this.tBIdEmp);
             this.Controls.Add(this.tBCodPro);
@@ -293,11 +288,12 @@
             this.Controls.Add(this.lblProyecto);
             this.Controls.Add(this.liBxEmpleados);
             this.Controls.Add(this.cmBxProyectos);
-            this.Controls.Add(this.btnAddEmple);
+            this.Controls.Add(this.btnAdd);
             this.Name = "FormComponentesProyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Componentes de proyectos";
             this.Load += new System.EventHandler(this.FormComponentesProyectos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.controladorEmpleadosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,7 +301,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAddEmple;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cmBxProyectos;
         private System.Windows.Forms.ListBox liBxEmpleados;
         private System.Windows.Forms.Label lblProyecto;
@@ -322,10 +318,10 @@
         private System.Windows.Forms.TextBox tBCodPro;
         private System.Windows.Forms.TextBox tBIdEmp;
         private System.Windows.Forms.ComboBox puestoComBox;
-        private System.Windows.Forms.Button btnAddPro;
         private System.Windows.Forms.Button btnAddCompo;
         private System.Windows.Forms.Button btnResetCompo;
         private System.Windows.Forms.TextBox tBDedica;
         private System.Windows.Forms.TextBox tBExtras;
+        private System.Windows.Forms.BindingSource controladorEmpleadosBindingSource;
     }
 }
