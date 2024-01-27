@@ -100,6 +100,29 @@ namespace FormularioRegistro
             FormComponentesProyectos compo = new FormComponentesProyectos();
             compo.ShowDialog();
         }
+
+        private void btnToolPro_Click(object sender, EventArgs e)
+        {
+            FormAltaProyecto formuAlta = new FormAltaProyecto();
+            formuAlta.ShowDialog();
+        }
+
+        private void btnToolEmp_Click(object sender, EventArgs e)
+        {
+            FormAltaEmpleados altaEmple = new FormAltaEmpleados();
+            altaEmple.ShowDialog();
+        }
+
+        private void btnToolCli_Click(object sender, EventArgs e)
+        {
+            FormAltaCliente client = new FormAltaCliente();
+            client.ShowDialog();
+        }
+
+        private void btnToolSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 /*
