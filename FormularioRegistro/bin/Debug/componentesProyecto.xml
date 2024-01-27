@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfComponentesProyecto>
+  <ComponentesProyecto>
+    <CodigoProyecto>1</CodigoProyecto>
+    <IdEmpleado>1</IdEmpleado>
+    <Puesto>Contable</Puesto>
+    <PorcentajeDedicacion>67</PorcentajeDedicacion>
+    <Extras>7</Extras>
+  </ComponentesProyecto>
+  <ComponentesProyecto>
+    <CodigoProyecto>1</CodigoProyecto>
+    <IdEmpleado>2</IdEmpleado>
+    <Puesto>Contable</Puesto>
+    <PorcentajeDedicacion>67</PorcentajeDedicacion>
+    <Extras>67</Extras>
+  </ComponentesProyecto>
+  <ComponentesProyecto>
+    <CodigoProyecto>4</CodigoProyecto>
+    <IdEmpleado>1</IdEmpleado>
+    <Puesto>Analista</Puesto>
+    <PorcentajeDedicacion>34</PorcentajeDedicacion>
+    <Extras>34</Extras>
+  </ComponentesProyecto>
+  <ComponentesProyecto>
+    <CodigoProyecto>2</CodigoProyecto>
+    <IdEmpleado>1</IdEmpleado>
+    <Puesto>Ventas</Puesto>
+    <PorcentajeDedicacion>34</PorcentajeDedicacion>
+    <Extras>34</Extras>
+  </ComponentesProyecto>
+</ArrayOfComponentesProyecto>

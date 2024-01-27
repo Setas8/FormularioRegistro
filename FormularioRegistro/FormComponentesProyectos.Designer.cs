@@ -105,7 +105,7 @@
             // 
             this.lblTxNom.AutoSize = true;
             this.lblTxNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTxNom.Location = new System.Drawing.Point(159, 15);
+            this.lblTxNom.Location = new System.Drawing.Point(129, 15);
             this.lblTxNom.Name = "lblTxNom";
             this.lblTxNom.Size = new System.Drawing.Size(60, 13);
             this.lblTxNom.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             this.lblTxDNI.AutoSize = true;
             this.lblTxDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTxDNI.Location = new System.Drawing.Point(362, 15);
+            this.lblTxDNI.Location = new System.Drawing.Point(352, 15);
             this.lblTxDNI.Name = "lblTxDNI";
             this.lblTxDNI.Size = new System.Drawing.Size(29, 13);
             this.lblTxDNI.TabIndex = 7;
@@ -125,7 +125,7 @@
             // 
             this.lblTxAp.AutoSize = true;
             this.lblTxAp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTxAp.Location = new System.Drawing.Point(255, 15);
+            this.lblTxAp.Location = new System.Drawing.Point(237, 15);
             this.lblTxAp.Name = "lblTxAp";
             this.lblTxAp.Size = new System.Drawing.Size(67, 13);
             this.lblTxAp.TabIndex = 8;
@@ -209,6 +209,7 @@
             // 
             // puestoComBox
             // 
+            this.puestoComBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.puestoComBox.FormattingEnabled = true;
             this.puestoComBox.Items.AddRange(new object[] {
             "Analista",
@@ -234,6 +235,7 @@
             this.btnAddCompo.TabIndex = 16;
             this.btnAddCompo.Text = "AÑADIR";
             this.btnAddCompo.UseVisualStyleBackColor = true;
+            this.btnAddCompo.Click += new System.EventHandler(this.btnAddCompo_Click);
             // 
             // btnResetCompo
             // 
@@ -292,6 +294,7 @@
             this.Name = "FormComponentesProyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Componentes de proyectos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormComponentesProyectos_FormClosing);
             this.Load += new System.EventHandler(this.FormComponentesProyectos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.controladorEmpleadosBindingSource)).EndInit();
             this.ResumeLayout(false);
