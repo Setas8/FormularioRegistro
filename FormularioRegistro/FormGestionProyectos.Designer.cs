@@ -54,6 +54,7 @@
             this.imprimirBot.TabIndex = 1;
             this.imprimirBot.Text = "IMPRIMIR";
             this.imprimirBot.UseVisualStyleBackColor = true;
+            this.imprimirBot.Click += new System.EventHandler(this.imprimirBot_Click);
             // 
             // ordenarBot
             // 

@@ -22,7 +22,10 @@ namespace FormularioRegistro
 
             //cargarProyectosLista();
             //cargarEmpleadosLista();
-              
+
+
+            notifyIconSeta.Visible = true;
+            toolStripStatusLblDate.Text = DateTime.Today.Date.ToShortDateString();
             ControladorEmpleados.leerEmpleadosXML();          
             ControladorProyectos.leerProyectosJSON();
             ControladorClientes.leerBinario();
@@ -122,6 +125,12 @@ namespace FormularioRegistro
         private void btnToolSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void listadoClientesTSMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoClientes listClientes = new FormListadoClientes();
+            listClientes.ShowDialog();
         }
     }
 }

@@ -384,6 +384,13 @@ namespace FormularioRegistro
             }
         }
 
+        private void richtbComent_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipComent.SetToolTip(richtbComent, "Ingresa un comentario");
+            toolTipComent.ToolTipTitle = "COMENTARIO";
+            toolTipComent.ToolTipIcon = ToolTipIcon.Info;
+        }
+
 
 
         /*      

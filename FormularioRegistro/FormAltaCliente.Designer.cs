@@ -52,6 +52,10 @@
             this.btnFont = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.richtbComent = new System.Windows.Forms.RichTextBox();
+            this.cMenuStripComent = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.domUDDescu = new System.Windows.Forms.DomainUpDown();
             this.lblComen = new System.Windows.Forms.Label();
             this.lblDescu = new System.Windows.Forms.Label();
@@ -80,19 +84,16 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.cMenuStripComent = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTipComent = new System.Windows.Forms.ToolTip(this.components);
             this.tbControlCliente.SuspendLayout();
             this.tPageDatGene.SuspendLayout();
             this.tPageDatPriv.SuspendLayout();
+            this.cMenuStripComent.SuspendLayout();
             this.gbTipoCli.SuspendLayout();
             this.tPageSector.SuspendLayout();
             this.tPageLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tPageCitas.SuspendLayout();
-            this.cMenuStripComent.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbControlCliente
@@ -332,6 +333,37 @@
             this.richtbComent.Size = new System.Drawing.Size(478, 86);
             this.richtbComent.TabIndex = 8;
             this.richtbComent.Text = "";
+            this.richtbComent.MouseEnter += new System.EventHandler(this.richtbComent_MouseEnter);
+            // 
+            // cMenuStripComent
+            // 
+            this.cMenuStripComent.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorToolStripMenuItem,
+            this.fuenteToolStripMenuItem,
+            this.exportarToolStripMenuItem});
+            this.cMenuStripComent.Name = "cMenuStripComent";
+            this.cMenuStripComent.Size = new System.Drawing.Size(119, 70);
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
+            // 
+            // fuenteToolStripMenuItem
+            // 
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
+            // 
+            // exportarToolStripMenuItem
+            // 
+            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.exportarToolStripMenuItem.Text = "Exportar";
+            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click);
             // 
             // domUDDescu
             // 
@@ -586,36 +618,6 @@
             // 
             this.OpFDia.DefaultExt = "jpg";
             // 
-            // cMenuStripComent
-            // 
-            this.cMenuStripComent.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.colorToolStripMenuItem,
-            this.fuenteToolStripMenuItem,
-            this.exportarToolStripMenuItem});
-            this.cMenuStripComent.Name = "cMenuStripComent";
-            this.cMenuStripComent.Size = new System.Drawing.Size(181, 92);
-            // 
-            // colorToolStripMenuItem
-            // 
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.colorToolStripMenuItem.Text = "Color";
-            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
-            // 
-            // fuenteToolStripMenuItem
-            // 
-            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
-            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fuenteToolStripMenuItem.Text = "Fuente";
-            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
-            // 
-            // exportarToolStripMenuItem
-            // 
-            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportarToolStripMenuItem.Text = "Exportar";
-            this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click);
-            // 
             // FormAltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,6 +637,7 @@
             this.tPageDatGene.PerformLayout();
             this.tPageDatPriv.ResumeLayout(false);
             this.tPageDatPriv.PerformLayout();
+            this.cMenuStripComent.ResumeLayout(false);
             this.gbTipoCli.ResumeLayout(false);
             this.gbTipoCli.PerformLayout();
             this.tPageSector.ResumeLayout(false);
@@ -642,7 +645,6 @@
             this.tPageLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.tPageCitas.ResumeLayout(false);
-            this.cMenuStripComent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,5 +707,6 @@
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
+        private System.Windows.Forms.ToolTip toolTipComent;
     }
 }
