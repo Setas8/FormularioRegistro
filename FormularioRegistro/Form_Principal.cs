@@ -132,6 +132,12 @@ namespace FormularioRegistro
             FormListadoClientes listClientes = new FormListadoClientes();
             listClientes.ShowDialog();
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_AcercaDe acerca = new Form_AcercaDe();
+            acerca.ShowDialog();
+        }
     }
 }
 /*

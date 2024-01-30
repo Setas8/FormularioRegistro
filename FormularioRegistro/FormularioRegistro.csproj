@@ -139,6 +139,12 @@
     <Compile Include="FormLogs.Designer.cs">
       <DependentUpon>FormLogs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AcercaDe.Designer.cs">
+      <DependentUpon>Form_AcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     <EmbeddedResource Include="FormLogs.resx">
       <DependentUpon>FormLogs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_AcercaDe.resx">
+      <DependentUpon>Form_AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Registro.resx">
       <DependentUpon>Form_Registro.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +212,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\FormularioRegistro.Controladores.ControladorEmpleados.datasource" />
@@ -218,6 +228,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adidas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culomono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nissan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proyecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vw.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

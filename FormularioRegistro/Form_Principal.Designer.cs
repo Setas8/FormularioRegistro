@@ -68,6 +68,8 @@
             this.verLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.tooStrStDate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLblDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStriPrin = new System.Windows.Forms.ToolStrip();
             this.btnToolPro = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -76,8 +78,6 @@
             this.btnToolCli = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
-            this.tooStrStDate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLblDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -234,7 +234,7 @@
             // listadoClientesTSMenuItem
             // 
             this.listadoClientesTSMenuItem.Name = "listadoClientesTSMenuItem";
-            this.listadoClientesTSMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoClientesTSMenuItem.Size = new System.Drawing.Size(144, 22);
             this.listadoClientesTSMenuItem.Text = "Listados";
             this.listadoClientesTSMenuItem.Click += new System.EventHandler(this.listadoClientesTSMenuItem_Click);
             // 
@@ -345,8 +345,9 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // verLogsToolStripMenuItem
             // 
@@ -365,6 +366,17 @@
             this.statusStrip.Size = new System.Drawing.Size(800, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "Status";
+            // 
+            // tooStrStDate
+            // 
+            this.tooStrStDate.Name = "tooStrStDate";
+            this.tooStrStDate.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLblDate
+            // 
+            this.toolStripStatusLblDate.Name = "toolStripStatusLblDate";
+            this.toolStripStatusLblDate.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblDate.Text = "toolStripStatusLabel1";
             // 
             // toolStriPrin
             // 
@@ -436,17 +448,6 @@
             this.btnToolSalir.Size = new System.Drawing.Size(23, 22);
             this.btnToolSalir.Text = "Salir";
             this.btnToolSalir.Click += new System.EventHandler(this.btnToolSalir_Click);
-            // 
-            // tooStrStDate
-            // 
-            this.tooStrStDate.Name = "tooStrStDate";
-            this.tooStrStDate.Size = new System.Drawing.Size(0, 17);
-            // 
-            // toolStripStatusLblDate
-            // 
-            this.toolStripStatusLblDate.Name = "toolStripStatusLblDate";
-            this.toolStripStatusLblDate.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLblDate.Text = "toolStripStatusLabel1";
             // 
             // notifyIconSeta
             // 
