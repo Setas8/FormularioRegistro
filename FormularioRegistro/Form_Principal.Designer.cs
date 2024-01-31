@@ -79,6 +79,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
+            this.YstMImpresPrelimi = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStriPrin.SuspendLayout();
@@ -207,7 +208,8 @@
             this.altaClienteMenuItem,
             this.modificacionClienteTSM,
             this.facturaciónToolStripMenuItem,
-            this.listadoClientesTSMenuItem});
+            this.listadoClientesTSMenuItem,
+            this.YstMImpresPrelimi});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.clientesToolStripMenuItem.Text = "Clientes";
@@ -215,26 +217,26 @@
             // altaClienteMenuItem
             // 
             this.altaClienteMenuItem.Name = "altaClienteMenuItem";
-            this.altaClienteMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.altaClienteMenuItem.Size = new System.Drawing.Size(184, 22);
             this.altaClienteMenuItem.Text = "Alta";
             this.altaClienteMenuItem.Click += new System.EventHandler(this.altaClienteMenuItem_Click);
             // 
             // modificacionClienteTSM
             // 
             this.modificacionClienteTSM.Name = "modificacionClienteTSM";
-            this.modificacionClienteTSM.Size = new System.Drawing.Size(144, 22);
+            this.modificacionClienteTSM.Size = new System.Drawing.Size(184, 22);
             this.modificacionClienteTSM.Text = "Modificación";
             // 
             // facturaciónToolStripMenuItem
             // 
             this.facturaciónToolStripMenuItem.Name = "facturaciónToolStripMenuItem";
-            this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.facturaciónToolStripMenuItem.Text = "Facturación";
             // 
             // listadoClientesTSMenuItem
             // 
             this.listadoClientesTSMenuItem.Name = "listadoClientesTSMenuItem";
-            this.listadoClientesTSMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.listadoClientesTSMenuItem.Size = new System.Drawing.Size(184, 22);
             this.listadoClientesTSMenuItem.Text = "Listados";
             this.listadoClientesTSMenuItem.Click += new System.EventHandler(this.listadoClientesTSMenuItem_Click);
             // 
@@ -347,7 +349,6 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // verLogsToolStripMenuItem
             // 
@@ -455,6 +456,13 @@
             this.notifyIconSeta.Text = "FORMULARIO";
             this.notifyIconSeta.Visible = true;
             // 
+            // YstMImpresPrelimi
+            // 
+            this.YstMImpresPrelimi.Name = "YstMImpresPrelimi";
+            this.YstMImpresPrelimi.Size = new System.Drawing.Size(184, 22);
+            this.YstMImpresPrelimi.Text = "Impresion preliminar";
+            this.YstMImpresPrelimi.Click += new System.EventHandler(this.YstMImpresPrelimi_Click);
+            // 
             // Form_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -531,5 +539,6 @@
         private System.Windows.Forms.ToolStripStatusLabel tooStrStDate;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblDate;
         private System.Windows.Forms.NotifyIcon notifyIconSeta;
+        private System.Windows.Forms.ToolStripMenuItem YstMImpresPrelimi;
     }
 }

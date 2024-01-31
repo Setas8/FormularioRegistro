@@ -133,9 +133,9 @@ namespace FormularioRegistro
             listClientes.ShowDialog();
         }
 
-        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void YstMImpresPrelimi_Click(object sender, EventArgs e)
         {
-            Form_AcercaDe acerca = new Form_AcercaDe();
+            Form_ImpresionPreliminar acerca = new Form_ImpresionPreliminar();
             acerca.ShowDialog();
         }
     }

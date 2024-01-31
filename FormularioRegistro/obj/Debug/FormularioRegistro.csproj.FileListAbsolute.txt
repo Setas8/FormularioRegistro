@@ -345,3 +345,4 @@ C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormListadoClientes.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormListadoClientes.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_AcercaDe.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ImpresionPreliminar.resources
