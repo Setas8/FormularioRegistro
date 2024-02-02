@@ -35,7 +35,7 @@
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Location = new System.Drawing.Point(63, 29);
+            this.printPreviewControl1.Location = new System.Drawing.Point(56, 36);
             this.printPreviewControl1.Name = "printPreviewControl1";
             this.printPreviewControl1.Size = new System.Drawing.Size(644, 359);
             this.printPreviewControl1.TabIndex = 0;
@@ -49,6 +49,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.Form_AcercaDe_Load);
             this.printPreviewDialog1.Click += new System.EventHandler(this.imprimirPreliminarStripMenuItem1_Click);
             // 
             // Form_AcercaDe
