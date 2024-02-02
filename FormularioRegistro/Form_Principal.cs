@@ -1,4 +1,5 @@
 ﻿using FormularioRegistro.Controladores;
+using FormularioRegistro.MDI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -137,6 +138,12 @@ namespace FormularioRegistro
         {
             Form_ImpresionPreliminar acerca = new Form_ImpresionPreliminar();
             acerca.ShowDialog();
+        }
+
+        private void toStrManMDI_Click(object sender, EventArgs e)
+        {
+            MainForm mdi = new MainForm();
+            mdi.ShowDialog();
         }
     }
 }

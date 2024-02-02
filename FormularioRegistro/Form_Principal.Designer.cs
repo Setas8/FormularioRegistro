@@ -50,6 +50,7 @@
             this.modificacionClienteTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoClientesTSMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.YstMImpresPrelimi = new System.Windows.Forms.ToolStripMenuItem();
             this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaEmpleadoTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionEmpleadoTSM = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +80,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
-            this.YstMImpresPrelimi = new System.Windows.Forms.ToolStripMenuItem();
+            this.toStrManMDI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStriPrin.SuspendLayout();
@@ -95,7 +96,8 @@
             this.proyectosToolStripMenuItem1,
             this.ventanaToolStripMenuItem,
             this.ayudaToolStripMenuItem,
-            this.verLogsToolStripMenuItem});
+            this.verLogsToolStripMenuItem,
+            this.toStrManMDI});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -239,6 +241,13 @@
             this.listadoClientesTSMenuItem.Size = new System.Drawing.Size(184, 22);
             this.listadoClientesTSMenuItem.Text = "Listados";
             this.listadoClientesTSMenuItem.Click += new System.EventHandler(this.listadoClientesTSMenuItem_Click);
+            // 
+            // YstMImpresPrelimi
+            // 
+            this.YstMImpresPrelimi.Name = "YstMImpresPrelimi";
+            this.YstMImpresPrelimi.Size = new System.Drawing.Size(184, 22);
+            this.YstMImpresPrelimi.Text = "Impresion preliminar";
+            this.YstMImpresPrelimi.Click += new System.EventHandler(this.YstMImpresPrelimi_Click);
             // 
             // proyectosToolStripMenuItem
             // 
@@ -456,12 +465,12 @@
             this.notifyIconSeta.Text = "FORMULARIO";
             this.notifyIconSeta.Visible = true;
             // 
-            // YstMImpresPrelimi
+            // toStrManMDI
             // 
-            this.YstMImpresPrelimi.Name = "YstMImpresPrelimi";
-            this.YstMImpresPrelimi.Size = new System.Drawing.Size(184, 22);
-            this.YstMImpresPrelimi.Text = "Impresion preliminar";
-            this.YstMImpresPrelimi.Click += new System.EventHandler(this.YstMImpresPrelimi_Click);
+            this.toStrManMDI.Name = "toStrManMDI";
+            this.toStrManMDI.Size = new System.Drawing.Size(41, 20);
+            this.toStrManMDI.Text = "MDI";
+            this.toStrManMDI.Click += new System.EventHandler(this.toStrManMDI_Click);
             // 
             // Form_Principal
             // 
@@ -540,5 +549,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblDate;
         private System.Windows.Forms.NotifyIcon notifyIconSeta;
         private System.Windows.Forms.ToolStripMenuItem YstMImpresPrelimi;
+        private System.Windows.Forms.ToolStripMenuItem toStrManMDI;
     }
 }
