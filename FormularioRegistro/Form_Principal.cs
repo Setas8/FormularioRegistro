@@ -139,11 +139,23 @@ namespace FormularioRegistro
             Form_ImpresionPreliminar acerca = new Form_ImpresionPreliminar();
             acerca.ShowDialog();
         }
-
-        private void toStrManMDI_Click(object sender, EventArgs e)
+     
+        private void mDIParentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainForm mdi = new MainForm();
             mdi.ShowDialog();
+        }
+
+        private void openFormsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm openf = new OpenForm();
+            openf.ShowDialog();
+        }
+
+        private void activeFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormOrigen fOrigen = new FormOrigen();
+            fOrigen.ShowDialog();
         }
     }
 }

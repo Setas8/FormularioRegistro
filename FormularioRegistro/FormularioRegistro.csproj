@@ -51,7 +51,9 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -178,6 +180,18 @@
     <Compile Include="FormGestionProyectos.Designer.cs">
       <DependentUpon>FormGestionProyectos.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDI\FormDestino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\FormDestino.Designer.cs">
+      <DependentUpon>FormDestino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\FormOrigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\FormOrigen.Designer.cs">
+      <DependentUpon>FormOrigen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI\FormularioHijo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +203,12 @@
     </Compile>
     <Compile Include="MDI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\OpenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\OpenForm.Designer.cs">
+      <DependentUpon>OpenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,11 +256,20 @@
     <EmbeddedResource Include="FormGestionProyectos.resx">
       <DependentUpon>FormGestionProyectos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MDI\FormDestino.resx">
+      <DependentUpon>FormDestino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\FormOrigen.resx">
+      <DependentUpon>FormOrigen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI\FormularioHijo.resx">
       <DependentUpon>FormularioHijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\OpenForm.resx">
+      <DependentUpon>OpenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

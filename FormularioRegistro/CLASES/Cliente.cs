@@ -12,7 +12,8 @@ namespace FormularioRegistro
     [Serializable]
     public class Cliente
     {
-
+        private int id = idIncrementado;
+        static private int idIncrementado = 1;
         private string nombre;
         private string direccion;
         private string ciudad;
@@ -35,6 +36,8 @@ namespace FormularioRegistro
                        string correo, string nif, string tipoCliente, int descuento, string comentarios, string logo, 
                        string telefono, DateTime fechaAlta, DateTime proximaCita, DateTime ultimaCita)
         {
+            this.Id = idIncrementado;
+            idIncrementado++;
             this.nombre = nombre;
             this.direccion = direccion;
             this.ciudad = ciudad;
@@ -52,6 +55,7 @@ namespace FormularioRegistro
             this.ultimaCita = ultimaCita;
         }
 
+        public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Ciudad { get => ciudad; set => ciudad = value; }

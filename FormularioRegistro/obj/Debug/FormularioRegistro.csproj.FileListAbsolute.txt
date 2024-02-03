@@ -347,3 +347,11 @@ C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\Formulari
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase.mdf
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase_log.ldf
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ImpresionPreliminar.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ImpresionPreliminar.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormDestino.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormOrigen.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormularioHijo.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.MainForm.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.OpenForm.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase.mdf
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase_log.ldf
