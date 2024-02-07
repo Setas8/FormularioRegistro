@@ -162,6 +162,18 @@
     <Compile Include="Form_ImpresionPreliminar.Designer.cs">
       <DependentUpon>Form_ImpresionPreliminar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ListClientesBBDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListClientesBBDD.Designer.cs">
+      <DependentUpon>Form_ListClientesBBDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListProyBBDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListProyBBDD.Designer.cs">
+      <DependentUpon>Form_ListProyBBDD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ImpresionPreliminar.resx">
       <DependentUpon>Form_ImpresionPreliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListClientesBBDD.resx">
+      <DependentUpon>Form_ListClientesBBDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListProyBBDD.resx">
+      <DependentUpon>Form_ListProyBBDD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Registro.resx">
       <DependentUpon>Form_Registro.cs</DependentUpon>

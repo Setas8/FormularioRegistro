@@ -157,6 +157,18 @@ namespace FormularioRegistro
             FormOrigen fOrigen = new FormOrigen();
             fOrigen.ShowDialog();
         }
+
+        private void toolSTMBBDDProyec_Click(object sender, EventArgs e)
+        {
+            Form_ListProyBBDDcodigo proyBBDD = new Form_ListProyBBDDcodigo();
+            proyBBDD.ShowDialog();
+        }
+
+        private void toolSTMBBDDClientes_Click(object sender, EventArgs e)
+        {
+            Form_ListClientesBBDD cliBBDD = new Form_ListClientesBBDD();
+            cliBBDD.ShowDialog();
+        }
     }
 }
 /*
