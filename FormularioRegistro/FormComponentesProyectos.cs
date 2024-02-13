@@ -86,17 +86,11 @@ namespace FormularioRegistro
         {
             bool crear = false;
             float f;
+            int i;
             decimal m;
+               
 
-            if (string.IsNullOrWhiteSpace(tBCodPro.Text))
-            {
-                tBCodPro.BackColor = Color.Red;
-            }
-            else if (string.IsNullOrWhiteSpace(tBIdEmp.Text))
-            {
-                tBIdEmp.BackColor = Color.Red;
-            }
-            else if (string.IsNullOrWhiteSpace(puestoComBox.Text))
+            if (string.IsNullOrWhiteSpace(puestoComBox.Text))
             {
                 puestoComBox.BackColor = Color.Red;
             }
@@ -140,7 +134,7 @@ namespace FormularioRegistro
             }
             if (crear)
             {
-                ComponentesProyecto cp = new ComponentesProyecto(tBCodPro.Text, tBIdEmp.Text, puestoComBox.Text,
+                ComponentesProyecto cp = new ComponentesProyecto(int.Parse(tBCodPro.Text),int.Parse(tBIdEmp.Text), puestoComBox.Text,
                                                          float.Parse(tBDedica.Text), decimal.Parse(tBExtras.Text));
 
 

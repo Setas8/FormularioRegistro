@@ -9,28 +9,28 @@ namespace FormularioRegistro.CLASES
     public class ComponentesProyecto
     {
 
-        private string codigoProyecto;
-        private string idEmpleado;
+        private int codigoProyecto;
+        private int idEmpleado;
         private string puesto;
         private float porcentajeDedicacion;
         private decimal extras;
 
         public ComponentesProyecto() { }
-        public ComponentesProyecto(string codigoProyecto, string idEmpleado, string puesto, float porcentajeDedicacion, decimal extras)
+        public ComponentesProyecto(int codigoProyecto, int idEmpleado, string puesto, float porcentajeDedicacion, decimal extras)
         {
-            this.CodigoProyecto = codigoProyecto;
+            this.codigoProyecto = codigoProyecto;
             this.IdEmpleado = idEmpleado;
             this.Puesto = puesto;
             this.PorcentajeDedicacion = porcentajeDedicacion;
             this.Extras = extras;
         }
-        public ComponentesProyecto(string codigoProyecto, string idEmpleado)
+        public ComponentesProyecto(int codigoProyecto, int idEmpleado)
         {
-            this.CodigoProyecto = codigoProyecto;
+            this.codigoProyecto = codigoProyecto;
             this.IdEmpleado = idEmpleado;
         }
-        public string CodigoProyecto { get => codigoProyecto; set => codigoProyecto = value; }
-        public string IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
+        public int CodigoProyecto { get => codigoProyecto; set => codigoProyecto = value; }
+        public int IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
         public string Puesto { get => puesto; set => puesto = value; }
         public float PorcentajeDedicacion { get => porcentajeDedicacion; set => porcentajeDedicacion = value; }
         public decimal Extras { get => extras; set => extras = value; }

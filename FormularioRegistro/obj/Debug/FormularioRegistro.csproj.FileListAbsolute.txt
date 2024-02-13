@@ -355,9 +355,10 @@ C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.OpenForm.resources
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase.mdf
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\bin\Debug\SampleDatabase_log.ldf
-C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ListProyBBDD.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormDestino.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormOrigen.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.FormularioHijo.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.MainForm.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.MDI.OpenForm.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ListClientesBBDD.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ListProyBBDDcodigo.resources
