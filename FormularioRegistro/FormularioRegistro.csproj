@@ -229,6 +229,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SampleDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAltaCliente.resx">
       <DependentUpon>FormAltaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +325,17 @@
     </None>
     <None Include="SampleDatabaseDataSet.xss">
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SampleDatabaseDataSet1.xsc">
+      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SampleDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SampleDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SampleDatabaseDataSet1.xss">
+      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

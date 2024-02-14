@@ -16,5 +16,12 @@ namespace FormularioRegistro
         {
             InitializeComponent();
         }
+
+        private void Form_ListClientesBBDD_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'sampleDatabaseDataSet1.Clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.sampleDatabaseDataSet1.Clientes);
+
+        }
     }
 }
