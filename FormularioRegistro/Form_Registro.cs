@@ -69,7 +69,7 @@ namespace FormularioRegistro
         private bool validarLoginLista(String usuario, String clave)
         {
 
-            int posicion = ControladorUsuarios.listaUsuarios.FindIndex(x => x.PId == usuario.ToLower());
+            int posicion = ControladorUsuarios.listaUsuarios.FindIndex(x => x.PUser == usuario.ToLower());
 
             return ((posicion != -1) && (ControladorUsuarios.listaUsuarios[posicion].PClave == clave)) ? true : false;
 

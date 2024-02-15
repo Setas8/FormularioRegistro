@@ -86,6 +86,12 @@ namespace FormularioRegistro
             this.estadoProyecto = e;
             codigoIncrementado++;
         }
+        public Proyecto (string descripcion)
+        {
+            this.descripcion = descripcion;
+        }
+
+
         public int Codigo { get => codigo; set => codigo = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }

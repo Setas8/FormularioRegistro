@@ -192,6 +192,12 @@
     <Compile Include="FormGestionProyectos.Designer.cs">
       <DependentUpon>FormGestionProyectos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Usuarios.Designer.cs">
+      <DependentUpon>Form_Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI\FormDestino.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionProyectos.resx">
       <DependentUpon>FormGestionProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Usuarios.resx">
+      <DependentUpon>Form_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI\FormDestino.resx">
       <DependentUpon>FormDestino.cs</DependentUpon>

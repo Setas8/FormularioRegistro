@@ -169,6 +169,12 @@ namespace FormularioRegistro
             Form_ListClientesBBDD cliBBDD = new Form_ListClientesBBDD();
             cliBBDD.ShowDialog();
         }
+
+        private void toolStripUser_Click(object sender, EventArgs e)
+        {
+            Form_Usuarios user = new Form_Usuarios();
+            user.ShowDialog();
+        }
     }
 }
 /*

@@ -51,6 +51,7 @@
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoClientesTSMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.YstMImpresPrelimi = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolSTMBBDDClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaEmpleadoTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionEmpleadoTSM = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +61,7 @@
             this.modificacionProyectosTSM = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosProyectosMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.componenteProyectoMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolSTMBBDDProyec = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,8 +86,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
-            this.toolSTMBBDDProyec = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolSTMBBDDClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripUser = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStriPrin.SuspendLayout();
@@ -102,7 +103,8 @@
             this.ventanaToolStripMenuItem,
             this.ayudaToolStripMenuItem,
             this.verLogsToolStripMenuItem,
-            this.toStrManMDI});
+            this.toStrManMDI,
+            this.toolStripUser});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -255,6 +257,13 @@
             this.YstMImpresPrelimi.Text = "Impresion preliminar";
             this.YstMImpresPrelimi.Click += new System.EventHandler(this.YstMImpresPrelimi_Click);
             // 
+            // toolSTMBBDDClientes
+            // 
+            this.toolSTMBBDDClientes.Name = "toolSTMBBDDClientes";
+            this.toolSTMBBDDClientes.Size = new System.Drawing.Size(184, 22);
+            this.toolSTMBBDDClientes.Text = "BBDD";
+            this.toolSTMBBDDClientes.Click += new System.EventHandler(this.toolSTMBBDDClientes_Click);
+            // 
             // proyectosToolStripMenuItem
             // 
             this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -268,20 +277,20 @@
             // altaEmpleadoTSM
             // 
             this.altaEmpleadoTSM.Name = "altaEmpleadoTSM";
-            this.altaEmpleadoTSM.Size = new System.Drawing.Size(144, 22);
+            this.altaEmpleadoTSM.Size = new System.Drawing.Size(180, 22);
             this.altaEmpleadoTSM.Text = "Alta";
             this.altaEmpleadoTSM.Click += new System.EventHandler(this.altaEmpleadoMenuItem_Click);
             // 
             // modificacionEmpleadoTSM
             // 
             this.modificacionEmpleadoTSM.Name = "modificacionEmpleadoTSM";
-            this.modificacionEmpleadoTSM.Size = new System.Drawing.Size(144, 22);
+            this.modificacionEmpleadoTSM.Size = new System.Drawing.Size(180, 22);
             this.modificacionEmpleadoTSM.Text = "Modificación";
             // 
             // listadosEmpleadosTSM
             // 
             this.listadosEmpleadosTSM.Name = "listadosEmpleadosTSM";
-            this.listadosEmpleadosTSM.Size = new System.Drawing.Size(144, 22);
+            this.listadosEmpleadosTSM.Size = new System.Drawing.Size(180, 22);
             this.listadosEmpleadosTSM.Text = "Listados";
             this.listadosEmpleadosTSM.Click += new System.EventHandler(this.listaEmpleadosMenuItem_Click);
             // 
@@ -300,29 +309,36 @@
             // altaProyectoMenu
             // 
             this.altaProyectoMenu.Name = "altaProyectoMenu";
-            this.altaProyectoMenu.Size = new System.Drawing.Size(180, 22);
+            this.altaProyectoMenu.Size = new System.Drawing.Size(149, 22);
             this.altaProyectoMenu.Text = "Alta";
             this.altaProyectoMenu.Click += new System.EventHandler(this.altaProyectoMenu_Click);
             // 
             // modificacionProyectosTSM
             // 
             this.modificacionProyectosTSM.Name = "modificacionProyectosTSM";
-            this.modificacionProyectosTSM.Size = new System.Drawing.Size(180, 22);
+            this.modificacionProyectosTSM.Size = new System.Drawing.Size(149, 22);
             this.modificacionProyectosTSM.Text = "Modificación";
             // 
             // listadosProyectosMenu
             // 
             this.listadosProyectosMenu.Name = "listadosProyectosMenu";
-            this.listadosProyectosMenu.Size = new System.Drawing.Size(180, 22);
+            this.listadosProyectosMenu.Size = new System.Drawing.Size(149, 22);
             this.listadosProyectosMenu.Text = "Listados";
             this.listadosProyectosMenu.Click += new System.EventHandler(this.listadosProyectosMenu_Click);
             // 
             // componenteProyectoMenu
             // 
             this.componenteProyectoMenu.Name = "componenteProyectoMenu";
-            this.componenteProyectoMenu.Size = new System.Drawing.Size(180, 22);
+            this.componenteProyectoMenu.Size = new System.Drawing.Size(149, 22);
             this.componenteProyectoMenu.Text = "Componentes";
             this.componenteProyectoMenu.Click += new System.EventHandler(this.componenteProyectoMenu_Click);
+            // 
+            // toolSTMBBDDProyec
+            // 
+            this.toolSTMBBDDProyec.Name = "toolSTMBBDDProyec";
+            this.toolSTMBBDDProyec.Size = new System.Drawing.Size(149, 22);
+            this.toolSTMBBDDProyec.Text = "BBDD";
+            this.toolSTMBBDDProyec.Click += new System.EventHandler(this.toolSTMBBDDProyec_Click);
             // 
             // ventanaToolStripMenuItem
             // 
@@ -386,21 +402,21 @@
             // mDIParentToolStripMenuItem
             // 
             this.mDIParentToolStripMenuItem.Name = "mDIParentToolStripMenuItem";
-            this.mDIParentToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.mDIParentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mDIParentToolStripMenuItem.Text = "MDIParent";
             this.mDIParentToolStripMenuItem.Click += new System.EventHandler(this.mDIParentToolStripMenuItem_Click);
             // 
             // openFormsToolStripMenuItem
             // 
             this.openFormsToolStripMenuItem.Name = "openFormsToolStripMenuItem";
-            this.openFormsToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.openFormsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openFormsToolStripMenuItem.Text = "OpenForms";
             this.openFormsToolStripMenuItem.Click += new System.EventHandler(this.openFormsToolStripMenuItem_Click);
             // 
             // activeFormToolStripMenuItem
             // 
             this.activeFormToolStripMenuItem.Name = "activeFormToolStripMenuItem";
-            this.activeFormToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.activeFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.activeFormToolStripMenuItem.Text = "ActiveForm";
             this.activeFormToolStripMenuItem.Click += new System.EventHandler(this.activeFormToolStripMenuItem_Click);
             // 
@@ -503,19 +519,12 @@
             this.notifyIconSeta.Text = "FORMULARIO";
             this.notifyIconSeta.Visible = true;
             // 
-            // toolSTMBBDDProyec
+            // toolStripUser
             // 
-            this.toolSTMBBDDProyec.Name = "toolSTMBBDDProyec";
-            this.toolSTMBBDDProyec.Size = new System.Drawing.Size(180, 22);
-            this.toolSTMBBDDProyec.Text = "BBDD";
-            this.toolSTMBBDDProyec.Click += new System.EventHandler(this.toolSTMBBDDProyec_Click);
-            // 
-            // toolSTMBBDDClientes
-            // 
-            this.toolSTMBBDDClientes.Name = "toolSTMBBDDClientes";
-            this.toolSTMBBDDClientes.Size = new System.Drawing.Size(184, 22);
-            this.toolSTMBBDDClientes.Text = "BBDD";
-            this.toolSTMBBDDClientes.Click += new System.EventHandler(this.toolSTMBBDDClientes_Click);
+            this.toolStripUser.Name = "toolStripUser";
+            this.toolStripUser.Size = new System.Drawing.Size(64, 20);
+            this.toolStripUser.Text = "Usuarios";
+            this.toolStripUser.Click += new System.EventHandler(this.toolStripUser_Click);
             // 
             // Form_Principal
             // 
@@ -600,5 +609,6 @@
         private System.Windows.Forms.ToolStripMenuItem activeFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolSTMBBDDProyec;
         private System.Windows.Forms.ToolStripMenuItem toolSTMBBDDClientes;
+        private System.Windows.Forms.ToolStripMenuItem toolStripUser;
     }
 }

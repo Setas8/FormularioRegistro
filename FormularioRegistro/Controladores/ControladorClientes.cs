@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormularioRegistro;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,7 +69,7 @@ namespace FormularioRegistro.Controladores
             this.contadorNombres++;
 
         }
-        private void mostrarProyectosLista(List<Cliente> lista, Control cnt)
+        private void mostrarClientesLista(List<Cliente> lista, Control cnt)
         {
             this.contadorNombres = 1;
             this.posicionInicial = 15;
@@ -77,64 +78,68 @@ namespace FormularioRegistro.Controladores
                 crearEtiquetaLista(c, cnt);
             }
         }
-        private string construirCadenaConexión()
+    }
+ }
+/*
+private static string construirCadenaConexión()
+{
+    // Directorio del archivo de base de datos relativo al directorio de ejecución
+    // A diferencia de la anterior version, forzamos a que coja la ruta relativa con el
+    // Path.GetFullPath
+    string databaseFileName = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\baseDatosGestiona.mdf"));
+    // Cadena de conexión
+    string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename ={ databaseFileName}; Integrated Security = True";
+    // Usar la cadena de conexión
+    MessageBox.Show("Cadena de conexión: " + connectionString);
+    return connectionString;
+}
+public static void insertarProyecto()
+{
+    // Cadena de conexión a la base de datos
+    // Ver método construirCadenaConexión más arriba
+    string connectionString = construirCadenaConexión();
+    // Query de inserción
+    string query = "INSERT INTO Proyectos (Descripcion, FechaInicio, FechaFin, Estado,PresupuestoInicial, PresupuestoActual, Cambios, CodigoCliente) VALUES(@Descripcion, @FechaInicio, @FechaFin, @Estado, @PresupuestoInicial,@PresupuestoActual, @Cambios, @CodigoCliente)";
+     // Valores para los parámetros
+     string descripcion = textBoxDescripcion.Text;
+    string fechaInicio = Convert.ToString(dateTimePicker1.Value);
+    string fechaFin = Convert.ToString(dateTimePicker2.Value);
+    string estado = Convert.ToString(comboBox1.ValueMember);
+    double presupuestoInicial = Convert.ToDouble(textBoxPresupuestoInicial.Text);
+    double presupuestoFinal = Convert.ToDouble(textBoxPresupuestoActual.Text);
+    string cambios = Convert.ToString(comboBox2.ValueMember);
+    string codigoCliente = textBoxCliente.Text;
+    // Crear la conexión
+    using (SqlConnection connection = new SqlConnection(connectionString))
+    {
+        // Abrir la conexión
+        connection.Open();
+        // Crear un objeto SqlCommand con la consulta y la conexión
+        using (SqlCommand command = new SqlCommand(query, connection))
         {
-            // Directorio del archivo de base de datos relativo al directorio de ejecución
-            string databaseFileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "baseDatosGestiona.mdf");
-            // Cadena de conexión
-            string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename ={ databaseFileName}; Integrated Security = True";
-            // Usar la cadena de conexión
-            MessageBox.Show("Cadena de conexión: " + connectionString);
-            return connectionString;
-        }
-        private void insertarCliente(Usuario u)
-        {
-            // Cadena de conexión a la base de datos
-            // Ver método construirCadenaConexión más arriba
-            string connectionString = construirCadenaConexión();
-            // Query de inserción
-            string query = "INSERT INTO Proyectos (Nombre, Direccion, Ciudad, Pais, NombreRepresentante, Correo," +
-                       " Nif, TipoCliente, Descuento, Comentarios) VALUES(@Nombre, @FechaInicio, @FechaFin, @Estado," +
-                     " @PresupuestoInicial,@PresupuestoActual, @Cambios, @CodigoCliente)";
-            // Valores para los parámetros
-            string descripcion = u.PId
-            string fechaInicio = 
-          
-            // Crear la conexión
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            // Agregar parámetros y sus valores
+            // No se añade a la inserción el campo código proyecto porque es autonumérico, aunque se puede configurar para poder
+            // insertarlo a la fuerza.
+            command.Parameters.AddWithValue("@Descripcion", descripcion);
+            command.Parameters.AddWithValue("@FechaInicio", fechaInicio);
+            command.Parameters.AddWithValue("@FechaFin", fechaFin);
+            command.Parameters.AddWithValue("@Estado", estado);
+            command.Parameters.AddWithValue("@PresupuestoInicial", presupuestoInicial);
+            command.Parameters.AddWithValue("@PresupuestoActual", presupuestoFinal);
+            command.Parameters.AddWithValue("@Cambios", cambios);
+            command.Parameters.AddWithValue("@CodigoCliente", codigoCliente);
+            try
             {
-                // Abrir la conexión
-                connection.Open();
-                // Crear un objeto SqlCommand con la consulta y la conexión
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    // Agregar parámetros y sus valores
-                    // No se añade a la inserción el campo código proyecto porque es autonumérico,
-                    // aunque se puede configurar para poder // insertarlo a la fuerza.
-                    command.Parameters.AddWithValue("@Descripcion", descripcion);
-                    command.Parameters.AddWithValue("@FechaInicio", fechaInicio);
-                    command.Parameters.AddWithValue("@FechaFin", fechaFin);
-                    command.Parameters.AddWithValue("@Estado", estado);
-                    command.Parameters.AddWithValue("@PresupuestoInicial",
-                    presupuestoInicial);
-                    command.Parameters.AddWithValue("@PresupuestoActual",
-                    presupuestoFinal);
-                    command.Parameters.AddWithValue("@Cambios", cambios);
-                    command.Parameters.AddWithValue("@CodigoCliente", codigoCliente);
-                    try
-                    {
-                        // Ejecutar la consulta de inserción
-                        int registrosAfectados = command.ExecuteNonQuery();
-                        MessageBox.Show($"Se insertó correctamente el registro. Registros
-                        afectados: { registrosAfectados}
-                        ");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error al insertar el registro: {ex.Message}");
-                    }
-                }
+                // Ejecutar la consulta de inserción
+                int registrosAfectados = command.ExecuteNonQuery();
+                MessageBox.Show($"Se insertó correctamente el registro. Registros afectados: { registrosAfectados}");
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al insertar el registro: {ex.Message}");
+            }
         }
-            }
+}
+
+    */
+

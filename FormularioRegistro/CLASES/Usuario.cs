@@ -13,22 +13,22 @@ namespace FormularioRegistro
 {
     public class Usuario
     {
-        private String id;
+        private String user;
         private String clave;
         
 
         public Usuario() {}
 
-        public Usuario(string id, string clave)
+        public Usuario(string user, string clave)
         {
-            this.id = id;
+            this.user = user;
             this.clave = clave;
         }
        
-        public String PId
+        public String PUser
         {
-            get { return id; }
-            set { id = value; }
+            get { return user; }
+            set { user = value; }
         }
         
         public String PClave 

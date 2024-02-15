@@ -35,9 +35,9 @@
             // datGrProyectos
             // 
             this.datGrProyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datGrProyectos.Location = new System.Drawing.Point(154, 34);
+            this.datGrProyectos.Location = new System.Drawing.Point(30, 34);
             this.datGrProyectos.Name = "datGrProyectos";
-            this.datGrProyectos.Size = new System.Drawing.Size(446, 243);
+            this.datGrProyectos.Size = new System.Drawing.Size(740, 369);
             this.datGrProyectos.TabIndex = 0;
             // 
             // Form_ListProyBBDDcodigo
