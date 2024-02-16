@@ -101,5 +101,10 @@ namespace FormularioRegistro
                 ControladorUsuarios.escribirUsuariosXML();
             }
         }
+
+        private void FormAltaUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

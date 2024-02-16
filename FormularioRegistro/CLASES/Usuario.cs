@@ -13,8 +13,8 @@ namespace FormularioRegistro
 {
     public class Usuario
     {
-        private String user;
-        private String clave;
+        private string user;
+        private string clave;
         
 
         public Usuario() {}
@@ -25,13 +25,13 @@ namespace FormularioRegistro
             this.clave = clave;
         }
        
-        public String PUser
+        public string PUser
         {
             get { return user; }
             set { user = value; }
         }
         
-        public String PClave 
+        public string PClave 
         {
             get { return clave; }
             set { clave = value; }

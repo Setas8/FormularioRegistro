@@ -102,6 +102,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta usuarios";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formularioAltaUsuarios_FormClosing);
+            this.Load += new System.EventHandler(this.FormAltaUsuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -81,9 +81,7 @@ namespace FormularioRegistro.Controladores
                 // Crear un objeto SqlCommand con la consulta y la conexión
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    // Agregar parámetros y sus valores
-                    // No se añade a la inserción el campo código proyecto porque es autonumérico,
-                    // aunque se puede configurar para poder // insertarlo a la fuerza.
+                    // Agregar parámetros y sus valores                                  
                     command.Parameters.AddWithValue("@user", usuario);
                     command.Parameters.AddWithValue("@clave", clave);
                     try

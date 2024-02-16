@@ -70,11 +70,11 @@ namespace FormularioRegistro
             
             string connectionString = ControladorUsuarios.construirCadenaConexión();
 
-            string query = "SELECT id_user, user, clave FROM Usuarios";
+            string query = "SELECT id_user, clave FROM Usuarios";
 
             dataGridUsers.Columns.Clear();
             dataGridUsers.Columns.Add("id_user", "id_user");
-            dataGridUsers.Columns.Add("user", "user");
+            //dataGridUsers.Columns.Add("user", "user");
             dataGridUsers.Columns.Add("clave", "clave");
 
 
@@ -91,7 +91,7 @@ namespace FormularioRegistro
                             while (reader.Read())
                             {
                                 // Agregar una nueva fila al DataGridView con los campos usuario
-                                dataGridUsers.Rows.Add(reader["id_user"].ToString(), reader["user"].ToString(), reader["clave"].ToString());
+                                dataGridUsers.Rows.Add(reader["id_user"].ToString(), reader["clave"].ToString());
                             }
                         }
                     }
@@ -107,7 +107,7 @@ namespace FormularioRegistro
 
 
             string connectionString = ControladorUsuarios.construirCadenaConexión();           
-            string query = "SELECT user FROM Usuarios";
+            string query = "SELECT clave FROM Usuarios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -120,7 +120,7 @@ namespace FormularioRegistro
                             while (reader.Read())
                             {
                                 // Agregar cada campo al ComboBox
-                                comBxUsers.Items.Add(reader["user"].ToString());
+                                comBxUsers.Items.Add(reader["clave"].ToString());
                             }
                         }
                     }
