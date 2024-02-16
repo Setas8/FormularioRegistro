@@ -35,6 +35,11 @@ namespace FormularioRegistro
             return ControladorProyectos.listaProyectos;
           
         }
+
+        private void Form_ListProyBBDDcodigo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

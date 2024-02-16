@@ -365,3 +365,4 @@ C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\Formulari
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ListClientesBBDD.resources
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_ListProyBBDDcodigo.resources
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Usuarios.resources
+C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Usuarios.resources

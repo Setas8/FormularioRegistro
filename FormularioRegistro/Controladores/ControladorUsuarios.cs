@@ -51,14 +51,14 @@ namespace FormularioRegistro.Controladores
                 Console.WriteLine("Error escribiendo xml " + e.Message);
             }
         }
-        private static string construirCadenaConexión()
+        public static string construirCadenaConexión()
         {
             // Directorio del archivo de base de datos relativo al directorio de ejecución
-            string databaseFileName = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\baseDatosGestiona.mdf"));
+            string databaseFileName = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\SampleDatabase.mdf"));
             // Cadena de conexión
             string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename ={databaseFileName}; Integrated Security = True";
             // Usar la cadena de conexión
-            MessageBox.Show("Cadena de conexión: " + connectionString);
+            //MessageBox.Show("Cadena de conexión: " + connectionString);
             return connectionString;
 
         }
@@ -68,10 +68,10 @@ namespace FormularioRegistro.Controladores
             // Ver método construirCadenaConexión más arriba
             string connectionString = construirCadenaConexión();
             // Query de inserción
-            string query = "INSERT INTO Usuarios (Id, Clave) VALUES(@Id, @Clave)";
+            string query = "INSERT INTO Usuarios VALUES(@user, @clave)";
             // Valores para los parámetros
-            string descripcion = u.PUser;
-            string fechaInicio = u.PClave;
+            string usuario = u.PUser;
+            string clave = u.PClave;
 
             // Crear la conexión
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -84,8 +84,8 @@ namespace FormularioRegistro.Controladores
                     // Agregar parámetros y sus valores
                     // No se añade a la inserción el campo código proyecto porque es autonumérico,
                     // aunque se puede configurar para poder // insertarlo a la fuerza.
-                    command.Parameters.AddWithValue("@PUser", descripcion);
-                    command.Parameters.AddWithValue("@PClave", fechaInicio);
+                    command.Parameters.AddWithValue("@user", usuario);
+                    command.Parameters.AddWithValue("@clave", clave);
                     try
                     {
                         // Ejecutar la consulta de inserción

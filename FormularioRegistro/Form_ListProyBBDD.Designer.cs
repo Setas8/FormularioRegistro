@@ -49,6 +49,7 @@
             this.Name = "Form_ListProyBBDDcodigo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de proyectos con BBDD con código";
+            this.Load += new System.EventHandler(this.Form_ListProyBBDDcodigo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datGrProyectos)).EndInit();
             this.ResumeLayout(false);
 

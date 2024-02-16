@@ -64,14 +64,21 @@ namespace FormularioRegistro
         }
 
 
-
+        
         private void CargarDatosEnDataGridView()
         {
-            string connectionString = "DataSource = ";
-            // Reemplaza con tu cadena de conexión
-            // En este caso, solo realiza un select del campo CódigoProyecto y nombreProyecto
-            // Sería necesario adaptarlo si queremos todos los campos de un proyecto.
-            string query = "SELECT Id_User, Id, Clave FROM Usuarios";
+            
+            string connectionString = ControladorUsuarios.construirCadenaConexión();
+
+            string query = "SELECT id_user, user, clave FROM Usuarios";
+
+            dataGridUsers.Columns.Clear();
+            dataGridUsers.Columns.Add("id_user", "id_user");
+            dataGridUsers.Columns.Add("user", "user");
+            dataGridUsers.Columns.Add("clave", "clave");
+
+
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -83,8 +90,8 @@ namespace FormularioRegistro
                         {
                             while (reader.Read())
                             {
-                                // Agregar una nueva fila al DataGridView con el código y el nombre del proyecto
-                                dataGridUsers.Rows.Add(reader["Id_User"].ToString(), reader["User"].ToString(), reader["Clave"].ToString());
+                                // Agregar una nueva fila al DataGridView con los campos usuario
+                                dataGridUsers.Rows.Add(reader["id_user"].ToString(), reader["user"].ToString(), reader["clave"].ToString());
                             }
                         }
                     }
@@ -99,9 +106,8 @@ namespace FormularioRegistro
         {
 
 
-            string connectionString = "tu-cadena-conexión"; 
-            // Reemplaza con tu cadena de conexión
-            string query = "SELECT User FROM Usuarios";
+            string connectionString = ControladorUsuarios.construirCadenaConexión();           
+            string query = "SELECT user FROM Usuarios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -114,7 +120,7 @@ namespace FormularioRegistro
                             while (reader.Read())
                             {
                                 // Agregar cada campo al ComboBox
-                                comBxUsers.Items.Add(reader["User"].ToString());
+                                comBxUsers.Items.Add(reader["user"].ToString());
                             }
                         }
                     }
