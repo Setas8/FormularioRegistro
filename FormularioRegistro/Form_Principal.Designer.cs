@@ -73,6 +73,7 @@
             this.mDIParentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activeFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripUser = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tooStrStDate = new System.Windows.Forms.ToolStripStatusLabel();
@@ -86,7 +87,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
-            this.toolStripUser = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStriPrin.SuspendLayout();
@@ -236,6 +236,7 @@
             this.modificacionClienteTSM.Name = "modificacionClienteTSM";
             this.modificacionClienteTSM.Size = new System.Drawing.Size(184, 22);
             this.modificacionClienteTSM.Text = "Modificación";
+            this.modificacionClienteTSM.Click += new System.EventHandler(this.modificacionClienteTSM_Click);
             // 
             // facturaciónToolStripMenuItem
             // 
@@ -277,20 +278,20 @@
             // altaEmpleadoTSM
             // 
             this.altaEmpleadoTSM.Name = "altaEmpleadoTSM";
-            this.altaEmpleadoTSM.Size = new System.Drawing.Size(180, 22);
+            this.altaEmpleadoTSM.Size = new System.Drawing.Size(144, 22);
             this.altaEmpleadoTSM.Text = "Alta";
             this.altaEmpleadoTSM.Click += new System.EventHandler(this.altaEmpleadoMenuItem_Click);
             // 
             // modificacionEmpleadoTSM
             // 
             this.modificacionEmpleadoTSM.Name = "modificacionEmpleadoTSM";
-            this.modificacionEmpleadoTSM.Size = new System.Drawing.Size(180, 22);
+            this.modificacionEmpleadoTSM.Size = new System.Drawing.Size(144, 22);
             this.modificacionEmpleadoTSM.Text = "Modificación";
             // 
             // listadosEmpleadosTSM
             // 
             this.listadosEmpleadosTSM.Name = "listadosEmpleadosTSM";
-            this.listadosEmpleadosTSM.Size = new System.Drawing.Size(180, 22);
+            this.listadosEmpleadosTSM.Size = new System.Drawing.Size(144, 22);
             this.listadosEmpleadosTSM.Text = "Listados";
             this.listadosEmpleadosTSM.Click += new System.EventHandler(this.listaEmpleadosMenuItem_Click);
             // 
@@ -379,7 +380,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // verLogsToolStripMenuItem
@@ -402,23 +403,30 @@
             // mDIParentToolStripMenuItem
             // 
             this.mDIParentToolStripMenuItem.Name = "mDIParentToolStripMenuItem";
-            this.mDIParentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mDIParentToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.mDIParentToolStripMenuItem.Text = "MDIParent";
             this.mDIParentToolStripMenuItem.Click += new System.EventHandler(this.mDIParentToolStripMenuItem_Click);
             // 
             // openFormsToolStripMenuItem
             // 
             this.openFormsToolStripMenuItem.Name = "openFormsToolStripMenuItem";
-            this.openFormsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openFormsToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.openFormsToolStripMenuItem.Text = "OpenForms";
             this.openFormsToolStripMenuItem.Click += new System.EventHandler(this.openFormsToolStripMenuItem_Click);
             // 
             // activeFormToolStripMenuItem
             // 
             this.activeFormToolStripMenuItem.Name = "activeFormToolStripMenuItem";
-            this.activeFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.activeFormToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.activeFormToolStripMenuItem.Text = "ActiveForm";
             this.activeFormToolStripMenuItem.Click += new System.EventHandler(this.activeFormToolStripMenuItem_Click);
+            // 
+            // toolStripUser
+            // 
+            this.toolStripUser.Name = "toolStripUser";
+            this.toolStripUser.Size = new System.Drawing.Size(64, 20);
+            this.toolStripUser.Text = "Usuarios";
+            this.toolStripUser.Click += new System.EventHandler(this.toolStripUser_Click);
             // 
             // statusStrip
             // 
@@ -518,13 +526,6 @@
             this.notifyIconSeta.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconSeta.Icon")));
             this.notifyIconSeta.Text = "FORMULARIO";
             this.notifyIconSeta.Visible = true;
-            // 
-            // toolStripUser
-            // 
-            this.toolStripUser.Name = "toolStripUser";
-            this.toolStripUser.Size = new System.Drawing.Size(64, 20);
-            this.toolStripUser.Text = "Usuarios";
-            this.toolStripUser.Click += new System.EventHandler(this.toolStripUser_Click);
             // 
             // Form_Principal
             // 

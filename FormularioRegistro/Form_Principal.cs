@@ -175,6 +175,12 @@ namespace FormularioRegistro
             Form_Usuarios user = new Form_Usuarios();
             user.ShowDialog();
         }
+
+        private void modificacionClienteTSM_Click(object sender, EventArgs e)
+        {
+            Form_modificarClientes clie = new Form_modificarClientes();
+            clie.ShowDialog();
+        }
     }
 }
 /*

@@ -19,6 +19,7 @@ namespace FormularioRegistro
         public Form_ImpresionPreliminar()
         {
             InitializeComponent();
+            
         }
 
         private void Form_AcercaDe_Load(object sender, EventArgs e)
@@ -51,14 +52,14 @@ namespace FormularioRegistro
             PrintPreviewDialog1.ShowDialog();
 
 
-            PrintPreviewDialog1.Document = document;
+            printPreviewControl1.Document = document;
 
         }
 
         // En el evento printpage generamos el documento leyendo la lista de alumnos
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            printPreviewControl1.Show();
+            printPreviewControl1.Show();        
             float yPos = 0;
             int contador = 0;
             float leftMargin = e.MarginBounds.Left;
