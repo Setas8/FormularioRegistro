@@ -181,6 +181,12 @@ namespace FormularioRegistro
             Form_modificarClientes clie = new Form_modificarClientes();
             clie.ShowDialog();
         }
+
+        private void pruebaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPrueba prueba = new FormPrueba();   
+            prueba.ShowDialog();
+        }
     }
 }
 /*

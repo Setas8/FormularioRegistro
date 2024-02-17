@@ -87,6 +87,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToolSalir = new System.Windows.Forms.ToolStripButton();
             this.notifyIconSeta = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStriPrin.SuspendLayout();
@@ -372,7 +373,8 @@
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem});
+            this.acercaDeToolStripMenuItem,
+            this.pruebaToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
@@ -527,6 +529,13 @@
             this.notifyIconSeta.Text = "FORMULARIO";
             this.notifyIconSeta.Visible = true;
             // 
+            // pruebaToolStripMenuItem
+            // 
+            this.pruebaToolStripMenuItem.Name = "pruebaToolStripMenuItem";
+            this.pruebaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pruebaToolStripMenuItem.Text = "Prueba";
+            this.pruebaToolStripMenuItem.Click += new System.EventHandler(this.pruebaToolStripMenuItem_Click);
+            // 
             // Form_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -611,5 +620,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolSTMBBDDProyec;
         private System.Windows.Forms.ToolStripMenuItem toolSTMBBDDClientes;
         private System.Windows.Forms.ToolStripMenuItem toolStripUser;
+        private System.Windows.Forms.ToolStripMenuItem pruebaToolStripMenuItem;
     }
 }

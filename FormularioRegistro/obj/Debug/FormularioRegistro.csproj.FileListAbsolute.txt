@@ -367,3 +367,4 @@ C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Usuarios.resources
 C:\Users\Setas\Desktop\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_Usuarios.resources
 C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.Form_modificarClientes.resources
+C:\Users\Ernie\Documents\GitHub\FormularioRegistro\FormularioRegistro\obj\Debug\FormularioRegistro.FormPrueba.resources
