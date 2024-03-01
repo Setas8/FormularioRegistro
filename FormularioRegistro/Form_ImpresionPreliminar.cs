@@ -79,6 +79,24 @@ namespace FormularioRegistro
                 leftMargin, yPos, new StringFormat());
                 contador += 3;
             });
+            /*
+            string datos = "";
+            foreach (DataGridViewRow d in dataGridView1.Rows)
+            {
+
+                if (!d.IsNewRow)
+                {
+                    datos = d.Cells[0].Value.ToString() + " " + d.Cells[1].Value.ToString()
+                        + " " + d.Cells[2].Value.ToString() + " " + d.Cells[3].Value.ToString();
+                    yPos = topMargin + (contador * font.Size);
+                    e.Graphics.DrawString(datos, font, Brushes.Black,
+                    leftMargin, yPos, new StringFormat());
+                    contador += 3;
+                }
+
+
+            }
+            */
         }
     }
 }

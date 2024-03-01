@@ -34,9 +34,9 @@
             this.tBxPswd = new System.Windows.Forms.TextBox();
             this.btnInsert = new System.Windows.Forms.Button();
             this.split1 = new System.Windows.Forms.SplitContainer();
-            this.dataGridUsers = new System.Windows.Forms.DataGridView();
             this.btnSelec = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridUsers = new System.Windows.Forms.DataGridView();
             this.comBxUsers = new System.Windows.Forms.ComboBox();
             this.lblUsuarios = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.split1)).BeginInit();
@@ -111,14 +111,6 @@
             this.split1.SplitterDistance = 292;
             this.split1.TabIndex = 5;
             // 
-            // dataGridUsers
-            // 
-            this.dataGridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsers.Location = new System.Drawing.Point(191, 20);
-            this.dataGridUsers.Name = "dataGridUsers";
-            this.dataGridUsers.Size = new System.Drawing.Size(376, 260);
-            this.dataGridUsers.TabIndex = 0;
-            // 
             // btnSelec
             // 
             this.btnSelec.Location = new System.Drawing.Point(71, 77);
@@ -136,6 +128,14 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "ELIMINAR";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridUsers
+            // 
+            this.dataGridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridUsers.Location = new System.Drawing.Point(191, 20);
+            this.dataGridUsers.Name = "dataGridUsers";
+            this.dataGridUsers.Size = new System.Drawing.Size(376, 260);
+            this.dataGridUsers.TabIndex = 0;
             // 
             // comBxUsers
             // 
